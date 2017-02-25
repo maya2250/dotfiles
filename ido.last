@@ -2,15 +2,19 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/shinya/dev/htdocs/" . "grav/")
  ("/Users/shinya/.emacs.d/" . "conf/")
  ("/Users/shinya/dev/atCoder/" . "beginnerContest055/")
- ("/Users/shinya/dev/" . "paiza/")
- ("/Users/shinya/" . ".emacs.d/")
+ ("/Users/shinya/dev/" . "memorandum/")
+ ("/Users/shinya/" . "dev/")
  ("/" . "home/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/shinya/dev/memorandum/"
+ "/Users/shinya/.ssh/"
+ "/Users/shinya/.emacs.d/"
  "/Users/shinya/.emacs.d/conf/"
  "/Users/shinya/dev/paiza/"
  "/Users/shinya/dev/atCoder/beginnerContest055/"
@@ -18,6 +22,11 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "github.md"
+ "id_rsa.pub"
+ "id_rsa"
+ "sshd_config.md"
+ ".gitignore"
  "20-general.el"
  "30-package.el"
  "00-color.el"
@@ -27,11 +36,23 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/shinya/.emacs.d/conf/" (22705 28158 0 0) "tmp/" "99-key-bind.el" "50-tabbar-conf.el" "40-modeline.el" "32-processing-mode.el" "31-emmet-mode.el" "30-package.el" "20-general.el" "10-load-path.el" "09-theme.el" "00-color.el" "#30-package.el#" "#20-general.el#" "../" "./")
+ ("/Users/shinya/.ssh/" (22705 46247 0 0) "known_hosts" "id_rsa_m" "id_rsa_emacs_conf" "config" "../" "./")
 
- ("/Users/shinya/.emacs.d/" (22705 28166 0 0) "theme/" "snippets/" "recentf~" "recentf" "init.el" "init-loader.el" "ido.last~" "ido.last" "eshell/" "elpa/" "elisp/" "conf/" "auto-save-list/" "ac-comphist.dat" ".git/" "../" "./")
+ ("/Users/shinya/.emacs.d/" (22705 46163 0 0) "theme/" "snippets/" "recentf" "README.md" "init.el" "init-loader.el" "ido.last" "eshell/" "elpa/" "elisp/" "conf/" "auto-save-list/" "ac-comphist.dat" ".gitignore" ".git/" "../" "./")
 
- ("/Users/shinya/dev/paiza/" (22705 19194 0 0) "tmp.php" "tmp.c" "tmp" "tmo" "timeDifference.c" "timeDifference" "checkdegit.c" "C031.php" "C028.php" "C028.c" "C026.c" "C025.c" "C024.php" "C024.c" "C023.c" "C022.c" "C021.c" "C020.c" "C019.c" "C018.c" "C017.c" "C015.c" "C014.c" "C013.c" "C008.php" "C006.php" "C006.c" "C005.php" "B038.c" "B038" "B037.c" "B037" "B036.php" "B035.php" "B034.c" "B033.php" "B032.php" "B031.php" "B031.c" "B031" "B029.php" "B029.c" "B023.php" "B008.c" "A004.php" "A004.c" "a.out" "../" "./")
+ ("/Users/shinya/.emacs.d/conf/" (22705 46161 0 0) "tmp/" "99-key-bind.el" "50-tabbar-conf.el" "40-modeline.el" "32-processing-mode.el" "31-emmet-mode.el" "30-package.el" "20-general.el" "10-load-path.el" "09-theme.el" "00-color.el" "../" "./")
+
+ ("/Users/shinya/dev/memorandum/" (22677 56905 0 0) "vagrant.md" "systemd.md" "sshd_config.md" "service_daemon.md" "iptables.md" "../" "./")
+
+ ("/Users/shinya/dev/htdocs/grav/" (22679 18017 0 0) "webserver-configs/" "vendor/" "user/" "tmp/" "system/" "robots.txt" "README.md" "logs/" "LICENSE.txt" "index.php" "images/" "CONTRIBUTING.md" "composer.lock" "composer.json" "CHANGELOG.md" "cache/" "bin/" "backup/" "assets/" ".htaccess" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/shinya/dev/htdocs/" (22679 16579 0 0) "skgrav/" "grav/" "../" "./")
+
+ ("/Users/shinya/" (22705 42781 0 0) "Xcode/" "VirtualBox VMs/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "dev/" "Desktop/" "Boostnote/" "Applications/" ".Xauthority" ".wget-hsts" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".vagrant/" ".uncrustify.d/" ".Trash/" ".subversion/" ".ssh/" ".rnd" ".Rhistory" ".rbenv/" ".Rapp.history" ".oracle_jre_usage/" ".matplotlib/" ".local/" ".lesshst" ".keychain/" ".gitconfig" ".gem/" ".emacs.d/" ".dvdcss/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" ".android/" "../" "./")
+
+ ("/Users/shinya/dev/paiza/" (22705 25694 0 0) "tmp.php" "tmp.c" "tmp" "tmo" "timeDifference.c" "timeDifference" "checkdegit.c" "C031.php" "C028.php" "C028.c" "C026.c" "C025.c" "C024.php" "C024.c" "C023.c" "C022.c" "C021.c" "C020.c" "C019.c" "C018.c" "C017.c" "C015.c" "C014.c" "C013.c" "C008.php" "C006.php" "C006.c" "C005.php" "B038.c" "B038" "B037.c" "B037" "B036.php" "B035.php" "B034.c" "B033.php" "B032.php" "B031.php" "B031.c" "B031" "B029.php" "B029.c" "B023.php" "B008.c" "A004.php" "A004.c" "a.out" "../" "./")
+
+ ("/Users/shinya/.emacs.d/auto-save-list/" (22705 41805 0 0) ".saves-12956-shinya.local~" "../" "./")
 
  ("/Users/shinya/dev/atCoder/beginnerContest055/" (22705 24828 0 0) "a.c~" "a.c" "#a.c#" "../" "./")
 
@@ -44,8 +65,6 @@
  ("/Applications/" (22704 50087 0 0) "Xcode.app/" "Wireless Diagnostics.app/" "Winamp.app/" "VOX.app/" "VLC.app/" "Visual Studio Code.app/" "VirtualBox.app/" "Utilities/" "Transmit.app/" "Tomahawk.app/" "TokyoLoader.app/" "Time Machine.app/" "Thunderbird.app/" "The Unarchiver.app/" "TextEdit.app/" "System Preferences.app/" "Sublime Text.app/" "Streaming for SoundCloud.app/" "Stickies.app/" "Steam.app/" "Slack.app/" "Siri.app/" "Safari.app/" "Reminders.app/" "R.app/" "QuickTime Player.app/" "Processing.app/" "Preview.app/" "Pocket.app/" "Photos.app/" "Photo Booth.app/" "Pages.app/" "Numbers.app/" "Notes.app/" "NetSpeedy.app/" "NetBeans/" "Mp3tag.app/" "Mission Control.app/" "MidRadioPlayer.app/" "Messages.app/" "Maps.app/" "MAMP/" "Mail.app/" "Macs Fan Control.app/" "MacDown.app/" "LINE.app/" "LibreOffice.app/" "Launchpad.app/" "Kindle.app/" "Keynote.app/" "iTunes.app/" "iTerm.app/" "iMovie.app/" "Image Capture.app/" "iBooks.app/" "HandBrake.app/" "GoogleJapaneseInput.localized/" "Google Chrome.app/" "GIMP.app/" "GarageBand.app/" "foobar2000/" "Font Book.app/" "FaceTime.app/" "Evernote.app/" "Emacs.app/" "DVD Player.app/" "Dropbox.app/" "Dictionary.app/" "Dashboard.app/" "Contacts.app/" "clementine.app/" "Chess.app/" "Calendar.app/" "Calculator.app/" "Brackets.app/" "Boostnote.app/" "BetterTouchTool.app/" "AvastSecureLine.app/" "Avast.app/" "Automator.app/" "Atom.app/" "AppCleaner.app/" "App Store.app/" "Apowersoft Video Downloader for Mac.app/" "Android Studio.app/" "Android File Transfer.app/" "Adobe/" "050plus.app/" ".localized" ".DS_Store" "../" "./")
 
  ("/Users/" (22607 25298 0 0) "shinya/" "Shared/" "Guest/" ".localized" "../" "./")
-
- ("/Users/shinya/" (22693 39242 0 0) "Xcode/" "VirtualBox VMs/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "dev/" "Desktop/" "Boostnote/" "Applications/" ".Xauthority" ".wget-hsts" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".vagrant/" ".uncrustify.d/" ".Trash/" ".subversion/" ".ssh/" ".rnd" ".Rhistory" ".rbenv/" ".Rapp.history" ".oracle_jre_usage/" ".matplotlib/" ".local/" ".lesshst" ".keychain/" ".gitconfig" ".gem/" ".emacs.d/" ".dvdcss/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" ".android/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
