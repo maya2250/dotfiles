@@ -5,60 +5,76 @@
  ("/Users/shinya/dev/htdocs/" . "grav/")
  ("/Users/shinya/.emacs.d/" . "conf/")
  ("/Users/shinya/dev/atCoder/" . "beginnerContest055/")
- ("/Users/shinya/dev/" . "memorandum/")
- ("/Users/shinya/" . "dev/")
- ("/" . "home/")
+ ("/Users/shinya/dev/" . "atCoder/")
+ ("/Users/shinya/" . ".emacs.d/")
+ ("/" . "dev/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/shinya/dev/memorandum/"
- "/Users/shinya/.ssh/"
- "/Users/shinya/.emacs.d/"
  "/Users/shinya/.emacs.d/conf/"
- "/Users/shinya/dev/paiza/"
+ "/Users/shinya/.emacs.d/theme/"
+ "/Users/shinya/.emacs.d/"
  "/Users/shinya/dev/atCoder/beginnerContest055/"
+ "/Users/shinya/dev/sh/"
+ "/Users/shinya/.ssh/"
+ "/Users/shinya/dev/memorandum/"
+ "/Users/shinya/dev/vagrant/"
+ "/Users/shinya/dev/paiza/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "github.md"
- "id_rsa.pub"
- "id_rsa"
- "sshd_config.md"
- ".gitignore"
- "20-general.el"
  "30-package.el"
- "00-color.el"
- "A004.php"
- "a.c"
+ "99-key-bind.el"
+ "50-tabbar-conf.el"
+ "32-processing-mode.el"
+ "31-emmet-mode.el"
+ "40-modeline.el"
+ "20-general.el"
+ "10-load-path.el"
+ "01-molokai.el"
+ "09-theme.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/shinya/.ssh/" (22705 46247 0 0) "known_hosts" "id_rsa_m" "id_rsa_emacs_conf" "config" "../" "./")
+ ("/Users/shinya/.emacs.d/conf/" (22706 40272 0 0) "tmp/" "99-key-bind.el" "60-lang-mode.el" "50-tabbar-conf.el" "32-processing-mode.el" "31-emmet-mode.el" "30-package.el" "20-general.el" "10-load-path.el" "09-theme.el" "00-color.el" "../" "./")
 
- ("/Users/shinya/.emacs.d/" (22705 46163 0 0) "theme/" "snippets/" "recentf" "README.md" "init.el" "init-loader.el" "ido.last" "eshell/" "elpa/" "elisp/" "conf/" "auto-save-list/" "ac-comphist.dat" ".gitignore" ".git/" "../" "./")
+ ("/Users/shinya/.emacs.d/" (22706 40278 0 0) "yasnippets/" "theme/" "snippets/" "recentf" "README.md" "myyasnippets/" "init.el" "init-loader.el" "ido.last" "eshell/" "elpa/" "elisp/" "conf/" "auto-save-list/" "ac-comphist.dat" ".mc-lists.el" ".gitignore" ".git/" "../" "./")
 
- ("/Users/shinya/.emacs.d/conf/" (22705 46161 0 0) "tmp/" "99-key-bind.el" "50-tabbar-conf.el" "40-modeline.el" "32-processing-mode.el" "31-emmet-mode.el" "30-package.el" "20-general.el" "10-load-path.el" "09-theme.el" "00-color.el" "../" "./")
+ ("/Users/shinya/.emacs.d/theme/" (22705 46163 0 0) "01-molokai.el" "../" "./")
 
- ("/Users/shinya/dev/memorandum/" (22677 56905 0 0) "vagrant.md" "systemd.md" "sshd_config.md" "service_daemon.md" "iptables.md" "../" "./")
+ ("/Users/shinya/dev/atCoder/beginnerContest055/" (22706 36288 0 0) "a.c~" "a.c" "#a.c#" "../" "./")
+
+ ("/Users/shinya/Dropbox/" (22688 13150 0 0) "カメラアップロード/" "アプリ/" "video/" "picture/" "music/" "Icon
+" "document/" "camera/" "bkup/" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
+
+ ("/Users/shinya/Dropbox/bkup/" (22706 34988 0 0) "qiita_2fa_recovery_codes.txt" "keymap.cson" "emacs-conf/" ".ssh/" ".emacs.d.tar.gz" ".DS_Store" "../" "./")
+
+ ("/Users/shinya/dev/vagrant/" (22706 25879 0 0) "Vagrantfile" "README.md" "provision.sh" ".vagrant/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/shinya/dev/memorandum/" (22706 22314 0 0) "vagrant.md" "systemd.md" "sshd_config.md" "service_daemon.md" "iptables.md" "github.md" "../" "./")
+
+ ("/Users/shinya/dev/" (22706 34980 0 0) "vagrant/" "tmp/" "thinkstats.code/" "sh/" "ruby/" "processing/" "paiza/" "memorandum/" "htdocs/" "go/" "config/" "atCoder/" "adaptor/" "../" "./")
+
+ ("/Users/shinya/dev/sh/" (22706 35199 0 0) "sshd_config" "ssh.sh" "renameMusicFile.sh" "bkup.sh" "../" "./")
+
+ ("/Users/shinya/" (22706 25950 0 0) "Xcode/" "VirtualBox VMs/" "vagrant/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "dev/" "Desktop/" "Boostnote/" "Applications/" ".Xauthority" ".wget-hsts" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".vagrant/" ".uncrustify.d/" ".Trash/" ".subversion/" ".ssh/" ".rnd" ".Rhistory" ".rbenv/" ".Rapp.history" ".oracle_jre_usage/" ".matplotlib/" ".local/" ".lesshst" ".keychain/" ".gitconfig" ".gem/" ".emacs.d/" ".dvdcss/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" ".android/" "../" "./")
+
+ ("/Users/shinya/.ssh/" (22706 29334 0 0) "known_hosts" "id_rsa_m" "id_rsa_emacs_conf" "id_rsa_bitbucket" "config" "../" "./")
+
+ ("/dev/" (22688 13100 0 0) "ttys000" "ttys003" "ttys002" "ttys001" "bpf4" "vboxnetctl" "vboxdrvu" "vboxdrv" "autofs_control" "autofs_homedirmounter" "autofs_notrigger" "autofs_nowait" "autofs" "tty.Bluetooth-Incoming-Port" "cu.Bluetooth-Incoming-Port" "xcpm" "rdisk1" "disk1" "rdisk0s2" "disk0s2" "rdisk0s3" "disk0s3" "rdisk0s1" "disk0s1" "io8logtemp" "io8logmt" "io8log" "rdisk0" "disk0" "afsc_type5" "profile" "fbt" "machtrace" "systrace" "sdt" "lockstat" "dtracehelper" "dtrace" "urandom" "random" "fsevents" "bpf3" "bpf2" "bpf1" "bpf0" "ptmx" "ptywf" "ttywf" "ptywe" "ttywe" "ptywd" "ttywd" "ptywc" "ttywc" "ptywb" "ttywb" "ptywa" "ttywa" "ptyw9" "ttyw9" "ptyw8" "ttyw8" "ptyw7" "ttyw7" "ptyw6" "ttyw6" "ptyw5" "ttyw5" "ptyw4" "ttyw4" "ptyw3" "ttyw3" "ptyw2" "ttyw2" "ptyw1" "ttyw1" "ptyw0" "ttyw0" "ptyvf" "ttyvf" "ptyve" "ttyve" "ptyvd" "ttyvd" "ptyvc" "ttyvc" "ptyvb" "ttyvb" "ptyva" "ttyva" "ptyv9" "ttyv9" "ptyv8" "ttyv8" "ptyv7" "ttyv7" "ptyv6" "ttyv6" "ptyv5" "ttyv5" "ptyv4" "ttyv4" "ptyv3" "ttyv3" "ptyv2" "ttyv2" "ptyv1" "ttyv1" "ptyv0" "ttyv0" "ptyuf" "ttyuf" "ptyue" "ttyue" "ptyud" "ttyud" "ptyuc" "ttyuc" "ptyub" "ttyub" "ptyua" "ttyua" "ptyu9" "ttyu9" "ptyu8" "ttyu8" "ptyu7" "ttyu7" "ptyu6" "ttyu6" "ptyu5" "ttyu5" "ptyu4" "ttyu4" "ptyu3" "ttyu3" "ptyu2" "ttyu2" "ptyu1" "ttyu1" "ptyu0" "ttyu0" "ptytf" "ttytf" "ptyte" "ttyte" "ptytd" "ttytd" "ptytc" "ttytc" "ptytb" "ttytb" "ptyta" "ttyta" "ptyt9" "ttyt9" "ptyt8" "ttyt8" "ptyt7" "ttyt7" "ptyt6" "ttyt6" "ptyt5" "ttyt5" "ptyt4" "ttyt4" "ptyt3" "ttyt3" "ptyt2" "ttyt2" "ptyt1" "ttyt1" "ptyt0" "ttyt0" "ptysf" "ttysf" "ptyse" "ttyse" "ptysd" "ttysd" "ptysc" "ttysc" "ptysb" "ttysb" "ptysa" "ttysa" "ptys9" "ttys9" "ptys8" "ttys8" "ptys7" "ttys7" "ptys6" "ttys6" "ptys5" "ttys5" "ptys4" "ttys4" "ptys3" "ttys3" "ptys2" "ttys2" "ptys1" "ttys1" "ptys0" "ttys0" "ptyrf" "ttyrf" "ptyre" "ttyre" "ptyrd" "ttyrd" "ptyrc" "ttyrc" "ptyrb" "ttyrb" "ptyra" "ttyra" "ptyr9" "ttyr9" "ptyr8" "ttyr8" "ptyr7" "ttyr7" "ptyr6" "ttyr6" "ptyr5" "ttyr5" "ptyr4" "ttyr4" "ptyr3" "ttyr3" "ptyr2" "ttyr2" "ptyr1" "ttyr1" "ptyr0" "ttyr0" "ptyqf" "ttyqf" "ptyqe" "ttyqe" "ptyqd" "ttyqd" "ptyqc" "ttyqc" "ptyqb" "ttyqb" "ptyqa" "ttyqa" "ptyq9" "ttyq9" "ptyq8" "ttyq8" "ptyq7" "ttyq7" "ptyq6" "ttyq6" "ptyq5" "ttyq5" "ptyq4" "ttyq4" "ptyq3" "ttyq3" "ptyq2" "ttyq2" "ptyq1" "ttyq1" "ptyq0" "ttyq0" "ptypf" "ttypf" "ptype" "ttype" "ptypd" "ttypd" "ptypc" "ttypc" "ptypb" "ttypb" "ptypa" "ttypa" "ptyp9" "ttyp9" "ptyp8" "ttyp8" "ptyp7" "ttyp7" "ptyp6" "ttyp6" "ptyp5" "ttyp5" "ptyp4" "ttyp4" "ptyp3" "ttyp3" "ptyp2" "ttyp2" "ptyp1" "ttyp1" "ptyp0" "ttyp0" "pfm" "pf" "auditpipe" "auditsessions" "stderr" "stdout" "stdin" "fd/" "oslog_stream" "oslog" "zero" "null" "tty" "console" "../" "./")
+
+ ("/Users/shinya/dev/atCoder/" (22705 28226 0 0) "mujin2017/" "beginnerContest055/" "../" "./")
 
  ("/Users/shinya/dev/htdocs/grav/" (22679 18017 0 0) "webserver-configs/" "vendor/" "user/" "tmp/" "system/" "robots.txt" "README.md" "logs/" "LICENSE.txt" "index.php" "images/" "CONTRIBUTING.md" "composer.lock" "composer.json" "CHANGELOG.md" "cache/" "bin/" "backup/" "assets/" ".htaccess" ".gitignore" ".git/" "../" "./")
 
  ("/Users/shinya/dev/htdocs/" (22679 16579 0 0) "skgrav/" "grav/" "../" "./")
 
- ("/Users/shinya/" (22705 42781 0 0) "Xcode/" "VirtualBox VMs/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "dev/" "Desktop/" "Boostnote/" "Applications/" ".Xauthority" ".wget-hsts" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".vagrant/" ".uncrustify.d/" ".Trash/" ".subversion/" ".ssh/" ".rnd" ".Rhistory" ".rbenv/" ".Rapp.history" ".oracle_jre_usage/" ".matplotlib/" ".local/" ".lesshst" ".keychain/" ".gitconfig" ".gem/" ".emacs.d/" ".dvdcss/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" ".android/" "../" "./")
-
  ("/Users/shinya/dev/paiza/" (22705 25694 0 0) "tmp.php" "tmp.c" "tmp" "tmo" "timeDifference.c" "timeDifference" "checkdegit.c" "C031.php" "C028.php" "C028.c" "C026.c" "C025.c" "C024.php" "C024.c" "C023.c" "C022.c" "C021.c" "C020.c" "C019.c" "C018.c" "C017.c" "C015.c" "C014.c" "C013.c" "C008.php" "C006.php" "C006.c" "C005.php" "B038.c" "B038" "B037.c" "B037" "B036.php" "B035.php" "B034.c" "B033.php" "B032.php" "B031.php" "B031.c" "B031" "B029.php" "B029.c" "B023.php" "B008.c" "A004.php" "A004.c" "a.out" "../" "./")
 
  ("/Users/shinya/.emacs.d/auto-save-list/" (22705 41805 0 0) ".saves-12956-shinya.local~" "../" "./")
-
- ("/Users/shinya/dev/atCoder/beginnerContest055/" (22705 24828 0 0) "a.c~" "a.c" "#a.c#" "../" "./")
-
- ("/Users/shinya/dev/atCoder/" (22705 19596 0 0) "beginnerContest055/" "../" "./")
-
- ("/Users/shinya/dev/" (22705 19224 0 0) "vagrant/" "tmp/" "thinkstats.code/" "test_api.py" "test2.py" "sh/" "ruby/" "processing/" "paiza/" "memorandum/" "htdocs/" "go/" "config/" "atCoder/" "adaptor/" "../" "./")
 
  ("/home/" (22688 13464 384782 0) "../" "./")
 

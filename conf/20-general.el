@@ -1,4 +1,3 @@
-
 ;; ------------------------------------------------------------------------
 ;; @ general
 
@@ -58,16 +57,16 @@
 (setq auto-save-default nil)
 
 ;; 最近使ったファイルをメニューに表示
-(recentf-mode t)
+;; (recentf-mode t)
 
 ;; 最近使ったファイルの表示数
-(setq recentf-max-menu-items 10)
+;; (setq recentf-max-menu-items 10)
 
 ;; 最近開いたファイルの保存数を増やす
-(setq recentf-max-saved-items 3000)
+;; (setq recentf-max-saved-items 3000)
 
 ;; 行間
-(setq-default line-spacing 0)
+(setq-default line-spacing 0.01)
 
 ;; スクリーンの最大化
 (set-frame-parameter nil 'fullscreen 'maximized)
@@ -78,37 +77,14 @@
 ;; ¥の代わりにバックスラッシュを入力する
 (define-key global-map [?¥] [?\\])
 
+;; tab
+(setq-default tab-width 4 indent-tabs-mode nil)
+
+;; 警告音もフラッシュも全て無効
+(setq ring-bell-function 'ignore)
+
 ;; collapse
-
-;; c coding style // c言語用
-(add-hook 'c-mode-hook
-'(lambda ()
-(hs-minor-mode 1)))
-
-
-;; C Coding style
-(add-hook 'c-mode-hook
-          '(lambda ()
-      (hs-minor-mode 1)))
-;; Scheme coding style
-(add-hook 'scheme-mode-hook
-          '(lambda ()
-      (hs-minor-mode 1)))
-;; Elisp coding style
-(add-hook 'emacs-lisp-mode-hook
-          '(lambda ()
-      (hs-minor-mode 1)))
-;; Lisp coding style
-(add-hook 'lisp-mode-hook
-          '(lambda ()
-      (hs-minor-mode 1)))
-;; Python coding style
-(add-hook 'python-mode-hook
-          '(lambda ()
-      (hs-minor-mode 1)))
-
 (define-key global-map (kbd "C-#") 'hs-toggle-hiding)
-
 (global-set-key (kbd "C-(") 'hs-hide-block)
 (global-set-key (kbd "C-)") 'hs-show-block)
 (global-set-key (kbd "C-M-(") 'hs-hide-all)

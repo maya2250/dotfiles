@@ -6,7 +6,7 @@
 (ac-config-default)
 
 ;; ;; auto-complete-mode を起動時に有効にする
-(global-auto-complete-mode t)
+;; (global-auto-complete-mode t)
 
 ;; ;; TABキーで自動補完を有効にする
 (ac-set-trigger-key "TAB")
@@ -15,32 +15,15 @@
 ;; @ undo-tree
 ;; undo-tree を読み込む
 ;; (require 'undo-tree)
-delete-auto-save-files
 ;; undo-tree を起動時に有効にする
 (global-undo-tree-mode t)
-
-;; ------------------------------------------------------------------------
-;; @ tabbar.el
-
-;; タブ化
-;; http://www.emacswiki.org/emacs/tabbar.el
-;;(require 'cl)
-;; (require 'tabbar nil t)
-
-;; ------------------------------------------------------------------------
-;; @ tabbar.el
-;; (require 'color-theme)
-(color-theme-initialize)
-
-;; (color-theme-molokai)
 
 ;; ------------------------------------------------------------------------
 ;; @  color-theme.el
 
 ;; Emacsのカラーテーマ
 ;; http://code.google.com/p/gnuemacscolorthemetest/
-;; (require 'color-theme)
-(color-theme-initialize)
+;; (color-theme-initialize)
 
 ;; ------------------------------------------------------------------------
 ;; @  neotree
@@ -78,6 +61,10 @@ delete-auto-save-files
 (indent-guide-global-mode)
 ;; (setq indent-guide-char ":")
 
+;; ------------------------------------------------------------------------
+;; @  smart-mode-line
+(sml/setup)
+(setq sml/theme 'powerline)
 
 ;; ------------------------------------------------------------------------
 ;; @ emmet-mode (for HTML)
