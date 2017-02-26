@@ -5,7 +5,7 @@
  ("/Users/shinya/dev/htdocs/" . "grav/")
  ("/Users/shinya/.emacs.d/" . "conf/")
  ("/Users/shinya/dev/atCoder/" . "beginnerContest055/")
- ("/Users/shinya/dev/" . "atCoder/")
+ ("/Users/shinya/dev/" . "sh/")
  ("/Users/shinya/" . ".emacs.d/")
  ("/" . "dev/")
 )
@@ -13,39 +13,41 @@
 ;; ----- ido-work-directory-list -----
 (
  "/Users/shinya/.emacs.d/conf/"
+ "/Users/shinya/dev/sh/"
+ "/Users/shinya/dev/atCoder/beginnerContest055/"
+ "/Users/shinya/dev/memorandum/"
  "/Users/shinya/.emacs.d/theme/"
  "/Users/shinya/.emacs.d/"
- "/Users/shinya/dev/atCoder/beginnerContest055/"
- "/Users/shinya/dev/sh/"
  "/Users/shinya/.ssh/"
- "/Users/shinya/dev/memorandum/"
  "/Users/shinya/dev/vagrant/"
  "/Users/shinya/dev/paiza/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "60-lang-mode.el"
+ "bkup.sh"
+ "a.c"
  "30-package.el"
  "99-key-bind.el"
+ "github.md"
  "50-tabbar-conf.el"
  "32-processing-mode.el"
  "31-emmet-mode.el"
  "40-modeline.el"
- "20-general.el"
- "10-load-path.el"
- "01-molokai.el"
- "09-theme.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/shinya/.emacs.d/conf/" (22706 40742 0 0) "tmp/" "99-key-bind.el" "60-lang-mode.el" "50-tabbar-conf.el" "32-processing-mode.el" "31-emmet-mode.el" "30-package.el" "20-general.el" "10-load-path.el" "09-theme.el" "00-color.el" "../" "./")
+ ("/Users/shinya/.emacs.d/conf/" (22706 44050 0 0) "tmp/" "99-key-bind.el" "60-lang-mode.el" "50-tabbar-conf.el" "32-processing-mode.el" "31-emmet-mode.el" "30-package.el" "20-general.el" "10-load-path.el" "09-theme.el" "00-color.el" "../" "./")
 
- ("/Users/shinya/.emacs.d/" (22706 40748 0 0) "yasnippets/" "theme/" "snippets/" "recentf" "README.md" "myyasnippets/" "init.el" "init-loader.el" "ido.last" "eshell/" "elpa/" "elisp/" "conf/" "auto-save-list/" "ac-comphist.dat" ".mc-lists.el" ".gitignore" ".git/" "../" "./")
+ ("/Users/shinya/dev/atCoder/beginnerContest055/" (22706 45582 0 0) "a.c~" "a.c" ".#a.c" "#a.c#" "../" "./")
+
+ ("/Users/shinya/dev/sh/" (22706 44386 0 0) "sshd_config" "ssh.sh" "renameMusicFile.sh" "bkup.sh" "../" "./")
+
+ ("/Users/shinya/.emacs.d/" (22706 42341 0 0) "yasnippets/" "theme/" "snippets/" "recentf" "README.md" "myyasnippets/" "init.el" "init-loader.el" "ido.last" "eshell/" "elpa/" "elisp/" "conf/" "auto-save-list/" "ac-comphist.dat" ".mc-lists.el" ".gitignore" ".git/" "../" "./")
 
  ("/Users/shinya/.emacs.d/theme/" (22705 46163 0 0) "01-molokai.el" "../" "./")
-
- ("/Users/shinya/dev/atCoder/beginnerContest055/" (22706 36288 0 0) "a.c~" "a.c" "#a.c#" "../" "./")
 
  ("/Users/shinya/Dropbox/" (22688 13150 0 0) "カメラアップロード/" "アプリ/" "video/" "picture/" "music/" "Icon
 " "document/" "camera/" "bkup/" ".DS_Store" ".dropbox.cache/" ".dropbox" "../" "./")
@@ -57,8 +59,6 @@
  ("/Users/shinya/dev/memorandum/" (22706 22314 0 0) "vagrant.md" "systemd.md" "sshd_config.md" "service_daemon.md" "iptables.md" "github.md" "../" "./")
 
  ("/Users/shinya/dev/" (22706 34980 0 0) "vagrant/" "tmp/" "thinkstats.code/" "sh/" "ruby/" "processing/" "paiza/" "memorandum/" "htdocs/" "go/" "config/" "atCoder/" "adaptor/" "../" "./")
-
- ("/Users/shinya/dev/sh/" (22706 35199 0 0) "sshd_config" "ssh.sh" "renameMusicFile.sh" "bkup.sh" "../" "./")
 
  ("/Users/shinya/" (22706 25950 0 0) "Xcode/" "VirtualBox VMs/" "vagrant/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "dev/" "Desktop/" "Boostnote/" "Applications/" ".Xauthority" ".wget-hsts" ".vscode/" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".vagrant/" ".uncrustify.d/" ".Trash/" ".subversion/" ".ssh/" ".rnd" ".Rhistory" ".rbenv/" ".Rapp.history" ".oracle_jre_usage/" ".matplotlib/" ".local/" ".lesshst" ".keychain/" ".gitconfig" ".gem/" ".emacs.d/" ".dvdcss/" ".DS_Store" ".dropbox/" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" ".android/" "../" "./")
 
