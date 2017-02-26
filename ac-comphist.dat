@@ -1,80 +1,80 @@
-((("num_str" .
-   [0 0 0 1 0 0 0])
-  ("0669a3" .
-   [1 0 0 0 0 0])
-  ("t" .
-   [1])
-  ("set" .
-   [3 0 0])
-  ("setenv" .
-   [0 0 0 1 0 0])
-  ("nil" .
-   [2 0 0])
-  ("eval" .
-   [1 0 0 1])
-  ("delete-backward-char" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("tools" .
-   [0 0 1 0 0])
-  ("backward-page" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("view" .
-   [1 0 0 0])
-  ("scroll-up-command" .
-   [0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0])
-  ("scroll-down" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("scroll-up" .
-   [1 0 0 0 1 0 1 0 0])
-  ("global-set-key" .
-   [0 0 0 0 0 0 0 0 0 1 2 0 0 0])
-  ("kbd" .
-   [2 0 0])
-  ("color-theme" .
-   [0 0 0 0 0 1 0 0 1 0 0])
-  ("defparameter" .
-   [0 0 0 0 0 0 1 0 0 0 0 0])
-  ("line-number-color" .
-   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("struct" .
-   [0 0 0 1 1 0])
-  ("seiseki" .
-   [0 0 0 0 0 1 0])
-  ("student1" .
-   [0 0 0 3 0 0 0 0])
-  ("name" .
-   [0 0 1 0])
-  ("average" .
-   [0 0 0 1 0 0 0])
-  ("cursor-color" .
-   [0 0 0 0 0 0 1 0 0 0 0 0])
-  ("cursor" .
-   [1 0 0 0 0 0])
-  ("v-cursor-color" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("-name" .
-   [1 0 0 0 0])
-  ("orgFileName" .
-   [0 0 0 1 0 0 0 0 0 0 0])
-  ("v-line-number-color" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("v-parenthesis-color" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("v-range-selection-color" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("v-line-end-space-color" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("s" .
-   [1])
-  ("define-key" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("global-map" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("hs-hide-block" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 1])
-  ("hs-hide-all" .
-   [1 0 0 0 0 0 0 0 0 0 0])
+((("auto-save-default" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("hs-show-all" .
    [1 0 0 0 0 0 0 0 0 0 0])
-  ("auto-save-default" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("hs-hide-all" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("hs-hide-block" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("global-map" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("define-key" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("s" .
+   [1])
+  ("v-line-end-space-color" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("v-range-selection-color" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("v-parenthesis-color" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("v-line-number-color" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("orgFileName" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("-name" .
+   [1 0 0 0 0])
+  ("v-cursor-color" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("cursor" .
+   [1 0 0 0 0 0])
+  ("cursor-color" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("average" .
+   [0 0 0 1 0 0 0])
+  ("name" .
+   [0 0 1 0])
+  ("student1" .
+   [0 0 0 3 0 0 0 0])
+  ("seiseki" .
+   [0 0 0 0 0 1 0])
+  ("struct" .
+   [0 0 0 1 1 0])
+  ("line-number-color" .
+   [1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("defparameter" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("color-theme" .
+   [0 0 0 0 0 1 0 0 1 0 0])
+  ("kbd" .
+   [2 0 0])
+  ("global-set-key" .
+   [0 0 0 0 0 0 0 0 0 1 2 0 0 0])
+  ("scroll-up" .
+   [1 0 0 0 1 0 1 0 0])
+  ("scroll-down" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("scroll-up-command" .
+   [0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0])
+  ("view" .
+   [1 0 0 0])
+  ("backward-page" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("tools" .
+   [0 0 1 0 0])
+  ("delete-backward-char" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("eval" .
+   [1 0 0 1])
+  ("nil" .
+   [2 0 0])
+  ("setenv" .
+   [0 0 0 1 0 0])
+  ("set" .
+   [3 0 0])
+  ("t" .
+   [1])
+  ("0669a3" .
+   [1 0 0 0 0 0])
+  ("num_str" .
+   [0 0 0 1 0 0 0])))

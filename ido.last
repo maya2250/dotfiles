@@ -39,9 +39,9 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/shinya/.emacs.d/conf/" (22706 40272 0 0) "tmp/" "99-key-bind.el" "60-lang-mode.el" "50-tabbar-conf.el" "32-processing-mode.el" "31-emmet-mode.el" "30-package.el" "20-general.el" "10-load-path.el" "09-theme.el" "00-color.el" "../" "./")
+ ("/Users/shinya/.emacs.d/conf/" (22706 40742 0 0) "tmp/" "99-key-bind.el" "60-lang-mode.el" "50-tabbar-conf.el" "32-processing-mode.el" "31-emmet-mode.el" "30-package.el" "20-general.el" "10-load-path.el" "09-theme.el" "00-color.el" "../" "./")
 
- ("/Users/shinya/.emacs.d/" (22706 40278 0 0) "yasnippets/" "theme/" "snippets/" "recentf" "README.md" "myyasnippets/" "init.el" "init-loader.el" "ido.last" "eshell/" "elpa/" "elisp/" "conf/" "auto-save-list/" "ac-comphist.dat" ".mc-lists.el" ".gitignore" ".git/" "../" "./")
+ ("/Users/shinya/.emacs.d/" (22706 40748 0 0) "yasnippets/" "theme/" "snippets/" "recentf" "README.md" "myyasnippets/" "init.el" "init-loader.el" "ido.last" "eshell/" "elpa/" "elisp/" "conf/" "auto-save-list/" "ac-comphist.dat" ".mc-lists.el" ".gitignore" ".git/" "../" "./")
 
  ("/Users/shinya/.emacs.d/theme/" (22705 46163 0 0) "01-molokai.el" "../" "./")
 

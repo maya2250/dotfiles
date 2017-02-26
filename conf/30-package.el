@@ -63,8 +63,9 @@
 
 ;; ------------------------------------------------------------------------
 ;; @  smart-mode-line
-(sml/setup)
 (setq sml/theme 'powerline)
+(setq sml/no-confirm-load-theme t)
+(sml/setup)
 
 ;; ------------------------------------------------------------------------
 ;; @ emmet-mode (for HTML)
