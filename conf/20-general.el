@@ -56,6 +56,9 @@
 ;; 終了時にオートセーブファイルを消す
 (setq auto-save-default nil)
 
+;; ロックファイルを生成しない
+ (setq create-lockfiles nil)
+
 ;; 最近使ったファイルをメニューに表示
 ;; (recentf-mode t)
 
