@@ -81,7 +81,8 @@
 (define-key global-map [?¥] [?\\])
 
 ;; tab
-(setq-default tab-width 4 indent-tabs-mode nil)
+;; (setq-default tab-width 4 indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 
 ;; 警告音もフラッシュも全て無効
 (setq ring-bell-function 'ignore)
