@@ -80,4 +80,12 @@
 (add-to-list 'auto-mode-alist '("\\.html\\.twig\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
+;; ------------------------------------------------------------------------
+;; @  hiwin
+
+;; hiwin-modeを有効化
+(hiwin-activate)
+
+;; 非アクティブウィンドウの背景色を設定
+(set-face-background 'hiwin-face "gray32")
 
