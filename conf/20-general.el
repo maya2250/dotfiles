@@ -34,11 +34,12 @@
 
 ;; 括弧の範囲内を強調表示
 (show-paren-mode t)
+;; (set-face-background 'show-paren-match-face v-parenthesis-color)
 (setq show-paren-delay 0)
-(setq show-paren-style 'expression)
-
-;; 括弧の範囲色
-(set-face-background 'show-paren-match-face v-parenthesis-color)
+(setq show-paren-style 'parenthesis)
+(set-face-attribute 'show-paren-match-face nil
+                    :background nil :foreground nil
+                    :underline v-show-paren-color :weight 'extra-bold)
 
 ;; 選択領域の色
 (set-face-background 'region v-range-selection-color)
@@ -93,3 +94,9 @@
 (global-set-key (kbd "C-)") 'hs-show-block)
 (global-set-key (kbd "C-M-(") 'hs-hide-all)
 (global-set-key (kbd "C-M-)") 'hs-show-all)
+
+;; カーソル形状
+(setq-default cursor-type 'bar)
+
+;; カーソル色
+(set-cursor-color v-cursor-color)
