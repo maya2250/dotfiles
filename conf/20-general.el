@@ -72,7 +72,7 @@
 (setq-default line-spacing 0.01)
 
 ;; スクリーンの最大化
-(set-frame-parameter nil 'fullscreen 'maximized)
+(set-frame-parameter nil 'fullscreen 'fullboth)
 
 ;; 括弧の補完
 (electric-pair-mode 1)
