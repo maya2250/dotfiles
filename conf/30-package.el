@@ -95,3 +95,11 @@
 (add-hook 'less-mode-hook 'rainbow-mode)
 (add-hook 'web-mode-hook 'rainbow-mode)
 (add-hook 'html-mode-hook 'rainbow-mode)
+
+
+;; ------------------------------------------------------------------------
+;; @  hl-line
+(global-hl-line-mode t)
+(custom-set-faces
+'(hl-line ((t (:background "gray10"))))
+)
