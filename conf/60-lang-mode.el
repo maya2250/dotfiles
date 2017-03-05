@@ -53,8 +53,8 @@
 ; less style
 (defun my-less-mode-init ()
   (setq-default indent-tabs-mode t)
-  ;; (setq css-indent-offset 4)
+  (setq css-indent-offset 4)
 )
 (add-hook 'less-css-mode-hook 'my-less-mode-init)
 
-(setq-default indent-tabs-mode nil)↲
+(setq-default indent-tabs-mode nil)
