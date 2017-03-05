@@ -1,4 +1,3 @@
-
 ;; ------------------------------------------------------------------------
 ;; @ Auto Complete
 ;; auto-complete-config の設定ファイルを読み込む。
@@ -89,3 +88,10 @@
 ;; 非アクティブウィンドウの背景色を設定
 (set-face-background 'hiwin-face "gray32")
 
+;; ------------------------------------------------------------------------
+;; @  rainbow mode
+(add-hook 'emacs-lisp-mode-hook 'rainbow-mode)
+(add-hook 'css-mode-hook 'rainbow-mode)
+(add-hook 'less-mode-hook 'rainbow-mode)
+(add-hook 'web-mode-hook 'rainbow-mode)
+(add-hook 'html-mode-hook 'rainbow-mode)
