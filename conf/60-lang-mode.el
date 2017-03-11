@@ -57,4 +57,12 @@
 )
 (add-hook 'less-css-mode-hook 'my-less-mode-init)
 
+; scss style
+(defun my-scss-mode-init ()
+  (setq-default indent-tabs-mode t)
+  (setq css-indent-offset 2)
+)
+(add-hook 'scss-mode-hook 'my-scss-mode-init)
+
+
 (setq-default indent-tabs-mode nil)

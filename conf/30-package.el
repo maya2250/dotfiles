@@ -103,3 +103,9 @@
 (custom-set-faces
 '(hl-line ((t (:background "gray10"))))
 )
+
+;; ------------------------------------------------------------------------
+;; @  scss mode
+(autoload 'scss-mode "scss-mode")
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
