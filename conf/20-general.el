@@ -100,3 +100,6 @@
 
 ;; カーソル色
 (set-cursor-color v-cursor-color)
+
+;; auto reload buffer
+(global-auto-revert-mode 1)
