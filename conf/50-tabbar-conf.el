@@ -3,7 +3,7 @@
 
 ;; タブ化
 ;; http://www.emacswiki.org/emacs/tabbar.el
-(require 'tabbar)
+;; (require 'tabbar)
 (tabbar-mode 1)
 
 (tabbar-mwheel-mode nil)                  ;; マウスホイール無効
@@ -63,9 +63,9 @@
 (set-face-attribute
  'tabbar-button nil
  :box nil)
-;; (set-face-attribute
-;;  'tabbar-separator nil
-;;  :height 2.0)
+(set-face-attribute
+ 'tabbar-separator nil
+ :height 1.0)
 
 ;;----- キーに割り当てる
 (global-set-key (kbd "<C-tab>") 'tabbar-forward-tab)
