@@ -48,6 +48,19 @@
 ;; (require 'helm-config)
 ;; (helm-mode 1)
 
+;; ;; M-xをheml-M-xに割当
+;; (global-set-key (kbd "M-x") 'helm-M-x)
+
+;; ;; バッファ・最近開いたファイルから探す
+;; (global-set-key (kbd "C-x b") 'helm-mini)
+
+;; ;; ファイルを探す
+;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
+
+;; ;; kill ring
+;; (global-set-key (kbd "M-y") 'helm-show-kill-ring)
+
+
 ;; ------------------------------------------------------------------------
 ;; @  ido
 (ido-mode 1)
