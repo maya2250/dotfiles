@@ -13,17 +13,8 @@
 
 ;; ------------------------------------------------------------------------
 ;; @ undo-tree
-;; undo-tree を読み込む
-;; (require 'undo-tree)
 ;; undo-tree を起動時に有効にする
 (global-undo-tree-mode t)
-
-;; ------------------------------------------------------------------------
-;; @  color-theme.el
-
-;; Emacsのカラーテーマ
-;; http://code.google.com/p/gnuemacscolorthemetest/
-;; (color-theme-initialize)
 
 ;; ------------------------------------------------------------------------
 ;; @  neotree
@@ -44,24 +35,6 @@
 (global-set-key [C-M-tab] 'clang-format-region)
 
 ;; ------------------------------------------------------------------------
-;; @  helm
-;; (require 'helm-config)
-;; (helm-mode 1)
-
-;; ;; M-xをheml-M-xに割当
-;; (global-set-key (kbd "M-x") 'helm-M-x)
-
-;; ;; バッファ・最近開いたファイルから探す
-;; (global-set-key (kbd "C-x b") 'helm-mini)
-
-;; ;; ファイルを探す
-;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
-
-;; ;; kill ring
-;; (global-set-key (kbd "M-y") 'helm-show-kill-ring)
-
-
-;; ------------------------------------------------------------------------
 ;; @  ido
 ;; (ido-mode 1)
 ;; (ido-everywhere 1)
@@ -74,6 +47,15 @@
 (ido-vertical-mode 1)
 (setq ido-vertical-define-keys 'C-n-and-C-p-only)
 
+(setq ido-use-faces t)
+(set-face-attribute 'ido-vertical-first-match-face nil
+                    :background nil
+                    :foreground "orange")
+(set-face-attribute 'ido-vertical-only-match-face nil
+                    :background nil
+                    :foreground nil)
+(set-face-attribute 'ido-vertical-match-face nil
+                    :foreground nil)
 
 ;; ------------------------------------------------------------------------
 ;; @  indent-guide
