@@ -76,7 +76,7 @@
 
 ;; ------------------------------------------------------------------------
 ;; @  smart-mode-line
-(setq sml/theme 'powerline)
+(setq sml/theme 'dark)
 (setq sml/no-confirm-load-theme t)
 (sml/setup)
 
