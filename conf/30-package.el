@@ -35,15 +35,9 @@
 (global-set-key [C-M-tab] 'clang-format-region)
 
 ;; ------------------------------------------------------------------------
-;; @  ido
-;; (ido-mode 1)
-;; (ido-everywhere 1)
-
-;; (setq ido-enable-flex-matching t) ;; 中間/あいまい一致
-
-;; ------------------------------------------------------------------------
-;; @  ido
+;; @  ido-vertical-mode
 (ido-mode 1)
+(ido-everywhere 1)
 (ido-vertical-mode 1)
 (setq ido-vertical-define-keys 'C-n-and-C-p-only)
 
