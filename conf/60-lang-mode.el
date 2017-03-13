@@ -1,6 +1,6 @@
 ;; 左端(文字の前)ではインデント、それ以外はタブの挿入
-(setq tab-always-indent nil)
-(setq c-tab-always-indent nil)
+;; (setq tab-always-indent nil)
+;; (setq c-tab-always-indent nil)
 
 ;; C Coding style
 (defun my-c-mode-init ()
@@ -65,4 +65,4 @@
 (add-hook 'scss-mode-hook 'my-scss-mode-init)
 
 
-(setq-default indent-tabs-mode nil)
+;; (setq-default indent-tabs-mode nil)

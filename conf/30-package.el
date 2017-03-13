@@ -9,7 +9,7 @@
 ;; (global-auto-complete-mode t)
 
 ;; ;; TABキーで自動補完を有効にする
-(ac-set-trigger-key "TAB")
+;; (ac-set-trigger-key "TAB")
 
 ;; ------------------------------------------------------------------------
 ;; @ undo-tree
@@ -58,9 +58,9 @@
 
 ;; ------------------------------------------------------------------------
 ;; @  smart-mode-line
-(setq sml/theme 'dark)
-(setq sml/no-confirm-load-theme t)
-(sml/setup)
+;; (setq sml/theme 'dark)
+;; (setq sml/no-confirm-load-theme t)
+;; (sml/setup)
 
 ;; ------------------------------------------------------------------------
 ;; @  web-mode
@@ -107,4 +107,9 @@
 ;; ------------------------------------------------------------------------
 ;; @  nyan mode
 (nyan-mode 1)
-(nyan-start-animation)
+(nyan-animate-nyancat t)
+
+;; ------------------------------------------------------------------------
+;; @  ruby-mode-electric
+;; (eval-after-load "ruby-mode"
+;;   '(add-hook 'ruby-mode-hook 'ruby-electric-mode))
