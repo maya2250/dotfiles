@@ -11,6 +11,8 @@
 
 ;; keybind 無効したい
 ;; (define-key undo-tree-map (kbd "C-/") nil)
+;; (define-key undo-tree-map (kbd "C-?") nil)
+;; (global-unset-key (kbd "C-/"))
 
 ;; ------------------------------------------------------------------------
 ;; @ neotree
