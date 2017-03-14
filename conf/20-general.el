@@ -124,7 +124,7 @@
 ;; (set-frame-parameter nil 'fullscreen 'fullboth)
 
 ;; maximize screen
-(set-frame-parameter nil 'fullscreen 'maximize)
+(set-frame-parameter nil 'fullscreen 'maximized)
 
 ;; ¥の代わりにバックスラッシュを入力する
 (define-key global-map [?¥] [?\\])
