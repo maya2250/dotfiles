@@ -9,6 +9,9 @@
 ;; undo-tree を起動時に有効にする
 (global-undo-tree-mode t)
 
+;; keybind 無効したい
+;; (define-key undo-tree-map (kbd "C-/") nil)
+
 ;; ------------------------------------------------------------------------
 ;; @ neotree
 ;; ------------------------------------------------------------------------
@@ -52,7 +55,6 @@
 ;; ------------------------------------------------------------------------
 ;; (setq indent-guide-char ":")
 (indent-guide-global-mode)
-
 ;; ------------------------------------------------------------------------
 ;; @ smart-mode-line
 ;; (setq sml/theme 'dark)
@@ -109,10 +111,47 @@
 ;; @ nyan mode
 ;; ------------------------------------------------------------------------
 (nyan-mode 1)
-(nyan-animate-nyancat t)
 
 ;; ------------------------------------------------------------------------
 ;; @ ruby-mode-electric
 ;; ------------------------------------------------------------------------
 ;; (eval-after-load "ruby-mode"
 ;;   '(add-hook 'ruby-mode-hook 'ruby-electric-mode))
+
+;; ------------------------------------------------------------------------
+;; @ yasnippets
+;; ------------------------------------------------------------------------
+(setq yas-snippet-dirs
+      '("~/.emacs.d/mysnippets"         ;; personal snippets
+	"~/.emacs.d/yasnippets"         ;; official snippets
+        ))
+(yas-global-mode t)
+
+
+;; ------------------------------------------------------------------------
+;; @ emmet-mode
+;; ------------------------------------------------------------------------
+(require 'emmet-mode)
+
+(define-key emmet-mode-keymap (kbd "C-c C-j") 'emmet-expand-line)
+(define-key emmet-mode-keymap (kbd "C-j") nil)
+
+;; Auto-start on any markup modes
+(add-hook 'sgml-mode-hook 'emmet-mode)
+
+;; enable Emmet's css abbreviation.
+(add-hook 'css-mode-hook 'emmet-mode)
+
+;; enable in web-mode
+(add-hook 'web-mode-hook 'emmet-mode)
+
+;; ------------------------------------------------------------------------
+;; @ processing-mode
+;; ------------------------------------------------------------------------
+
+;; (setq processing-location "/usr/bin/processing-java")
+(setq processing-location "/usr/local/bin/processing-java")
+
+(setq processing-application-dir "/Applications/Processing.app")
+
+(setq processing-sketchbook-dir "~/dev/processing/")

@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: elisp comment block for package
-# key: combe
+# name: comment block for elisp package
+# key: cobe
 # --
 ;; ------------------------------------------------------------------------
 ;; @ $0
