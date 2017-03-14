@@ -120,8 +120,11 @@
 ;; 行間
 (setq-default line-spacing v-line-space)
 
-;; スクリーンの最大化
-(set-frame-parameter nil 'fullscreen 'fullboth)
+;; full screen
+;; (set-frame-parameter nil 'fullscreen 'fullboth)
+
+;; maximize screen
+(set-frame-parameter nil 'fullscreen 'maximize)
 
 ;; ¥の代わりにバックスラッシュを入力する
 (define-key global-map [?¥] [?\\])
