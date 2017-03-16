@@ -1,9 +1,13 @@
 ;; ------------------------------------------------------------------------
 ;; @ Mode line setup
 ;; ------------------------------------------------------------------------
+;; reference: http://emacs-fu.blogspot.jp/2011/08/customizing-mode-line.html
 
 (setq-default mode-line-format
 	      (list
+	       ;; ファイルパスも表示させたいんだけど、記述がわからん
+	       ;; 参考　http://emacs-fu.blogspot.jp/2011/08/customizing-mode-line.html
+
 	       ;; the buffer name; the file name as a tool tip
 	       '(:eval (propertize "%b " 'face 'font-lock-keyword-face
 				   'help-echo (buffer-file-name)))
@@ -62,6 +66,6 @@
 	       ;; nyan-mode uses nyan cat as an alternative to %p
 	       '(:eval (when nyan-mode (list (nyan-create))))
 
-
 	       "%-"
 	       ))
+
