@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: blog_template_for_grav
+# key: bt
+# --
+---
+title: $0
+date: `(insert (format-time-string "%H:%M %m/%d/%Y"))`
+author: maya
+---
+# $1

@@ -127,6 +127,7 @@
       '("~/.emacs.d/mysnippets"         ;; personal snippets
 	"~/.emacs.d/yasnippets"         ;; official snippets
         ))
+(add-to-list 'warning-suppress-types '(yasnippet backquote-change))
 (yas-global-mode t)
 
 
