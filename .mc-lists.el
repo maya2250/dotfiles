@@ -3,11 +3,13 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-	undo-tree-visualize
-	))
+        markdown-cycle
+        tabbar-forward-tab
+        undo-tree-visualize
+        ))
 
 (setq mc/cmds-to-run-once
       '(
-	markdown-exdent-or-delete
-	mouse-drag-secondary
-	))
+        markdown-exdent-or-delete
+        mouse-drag-secondary
+        ))

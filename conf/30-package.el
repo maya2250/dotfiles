@@ -1,3 +1,4 @@
+;; package summary
 ;; ------------------------------------------------------------------------
 ;; @ Auto Complete
 ;; ------------------------------------------------------------------------
@@ -161,3 +162,11 @@
 (setq processing-application-dir "/Applications/Processing.app")
 
 (setq processing-sketchbook-dir "~/dev/processing/")
+
+;; ------------------------------------------------------------------------
+;; @ Flycheck
+;; ------------------------------------------------------------------------
+
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(define-key global-map (kbd "C-c n") 'flycheck-next-error)
+(define-key global-map (kbd "C-c p") 'flycheck-previous-error)
