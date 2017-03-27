@@ -33,6 +33,8 @@
 (global-set-key (kbd "C-,") 'mc/mark-previous-like-this-word)
 (global-set-key (kbd "C-<") 'mc/unmark-next-like-this)
 (global-set-key (kbd "C->") 'mc/unmark-previous-like-this)
+(global-set-key (kbd "M-C-<") 'mc/skip-to-previous-like-this)
+(global-set-key (kbd "M-C->") 'mc/skip-to-next-like-this)
 
 ;; ------------------------------------------------------------------------
 ;; @ clang-format
