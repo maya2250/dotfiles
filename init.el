@@ -19,3 +19,5 @@
 ;; ------------------------------------------------------------------------
 ;; avoid to write 'package-selected-packages'
 (load (setq custom-file (expand-file-name "custom.el" user-emacs-directory)))
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)

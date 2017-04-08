@@ -3,13 +3,15 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-        markdown-cycle
-        tabbar-forward-tab
-        undo-tree-visualize
-        ))
+	c-electric-star
+	markdown-cycle
+	tabbar-forward-tab
+	undo-tree-visualize
+	xref-find-apropos
+	))
 
 (setq mc/cmds-to-run-once
       '(
-        markdown-exdent-or-delete
-        mouse-drag-secondary
-        ))
+	markdown-exdent-or-delete
+	mouse-drag-secondary
+	))
