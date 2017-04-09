@@ -5,6 +5,8 @@
       '(
 	c-electric-star
 	markdown-cycle
+	org-beginning-of-line
+	org-self-insert-command
 	tabbar-forward-tab
 	undo-tree-visualize
 	xref-find-apropos
