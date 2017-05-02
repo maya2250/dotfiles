@@ -1,9 +1,12 @@
 #!/bin/bash
 
-DOT_FILES=$(ls -ad .??*)
-DOT_DIR=~/.dotfiles
+cd $(dirname $0)
+DOT_FILES=$(ls -ad .?*)
 
 for file in ${DOT_FILES}; do
-    echo ${file}
-    ln -sf ${DOT_DIR}/${file} ~/
+    if [ ${file} = '.git' ] || [ ${file} = '..' ]; then
+	continue
+    fi
+
+    ln -sf ${PWD}/${file} $HOME
 done
