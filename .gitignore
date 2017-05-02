@@ -5,5 +5,5 @@
 .emacs.d/ido.last
 .emacs.d/elpa/archives/*
 .emacs.d/auto-save-list
-*.swap
+*.swp
 .vim/.netrwhist
