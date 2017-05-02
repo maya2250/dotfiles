@@ -1,25 +1,18 @@
 export LSCOLORS=gxfxcxdxbxegedabagacad
-
-# export home/bin
 export PATH="$PATH:$HOME/bin"
-
-# android
-#export PATH=$PATH:/Users/shinya/Library/Android/sdk/platform-tools 
-
-# go
-#export GOPATH=$HOME/go
-#export PATH=$PATH:$GOPATH/bin
 
 test -r ~/.bashrc && . ~/.bashrc
 
 PS1="[\u@\h \w]\$ "
 
-#export PATH="/usr/local/Cellar/git/2.11.0/bin:$PATH"
+# ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# phoenix
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
+# man
 export MANPAGER='less -R'
 	man() {
 		env \
