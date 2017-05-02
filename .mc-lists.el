@@ -10,6 +10,7 @@
 	tabbar-forward-tab
 	undo-tree-visualize
 	xref-find-apropos
+	xref-find-definitions
 	))
 
 (setq mc/cmds-to-run-once
