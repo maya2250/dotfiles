@@ -4,4 +4,6 @@
 .emacs.d/ac-comphist.dat
 .emacs.d/ido.last
 .emacs.d/elpa/archives/*
+.emacs.d/auto-save-list
+*.swap
 .vim/.netrwhist
