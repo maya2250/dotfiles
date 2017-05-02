@@ -4,7 +4,7 @@ cd $(dirname $0)
 DOT_FILES=$(ls -ad .?*)
 
 for file in ${DOT_FILES}; do
-    if [ ${file} = '.git' ] || [ ${file} = '..' ]; then
+    if [ ${file} = '.git' ] || [ ${file} = '.gitignore' ] || [ ${file} = '..' ]; then
 	continue
     fi
 
