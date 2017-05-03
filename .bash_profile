@@ -1,9 +1,7 @@
 export LSCOLORS=gxfxcxdxbxegedabagacad
+
+# Add `~/bin` to the `$PAHT`
 export PATH="$PATH:$HOME/bin"
-
-test -r ~/.bashrc && . ~/.bashrc
-
-PS1="[\u@\h \w]\$ "
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -25,3 +23,6 @@ man() {
 	LESS_TERMCAP_us=$(printf "\e[1;32m") \
 	man "$@"
 }
+
+# load .bashrc
+test -f ~/.bashrc && . ~/.bashrc

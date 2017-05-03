@@ -7,3 +7,5 @@ alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias path="echo $PATH | tr : '\n'"
 alias ocaml="rlwrap ocaml"
 
+# prompt format
+PS1="[\u@\h \w]\$ "
