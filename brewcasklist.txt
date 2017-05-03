@@ -1,0 +1,5 @@
+atom
+processing
+sqlitebrowser
+vagrant
+xquartz
