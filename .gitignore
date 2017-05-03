@@ -7,3 +7,4 @@
 .emacs.d/auto-save-list
 *.swp
 .vim/.netrwhist
+README.html
