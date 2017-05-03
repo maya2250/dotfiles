@@ -1,6 +1,6 @@
-[user]
-	name = maya 
-	email = maya2250.dev@gmail.com
+# create ".gitconfig.user" for user name and email
+[include]
+	path = .gitconfig.user
 [core]
 	editor = vim -c \"set fenc=utf-8\"
 [color]
