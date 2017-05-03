@@ -10,3 +10,4 @@ for file in ${DOT_FILES}; do
 
     ln -sf ${PWD}/${file} $HOME
 done
+unset DOT_FILES file
