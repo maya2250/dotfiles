@@ -11,6 +11,7 @@ set list               " show invisible character
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
 :syntax on
+colorscheme jellybeans
 
 " invalid arrow keys
 noremap <Up> <Nop>
