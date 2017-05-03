@@ -1,40 +1,18 @@
-"行番号の表示
-set number
+set number             " line number
+set autoindent         " auto indentation
+set incsearch          " incremental search
+set autoread           " auto reload
+set showmatch          " show matching parenthesis
+set smartindent        " 
+set shiftwidth=2       " set shift moving width
+set tabstop=4          " tab width
 
-"vi互換をオフ
-set nocompatible
-
-"新しい行のインデントを現在行と同じにする
-set autoindent
-
-"インクリメンタルサーチ設定
-set incsearch
-
-"タブ文字、行末など不可視文字を表示
-set list
-
-"可視化した空白文字の表示形式設定
+set list               " show invisible character
 set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 
-"閉じ括弧が入力されたとき、対応する括弧を表示する
-set showmatch
-
-"新しい行を作ったときに高度な自動インデントを行う
-set smartindent
-
-"シフト移動幅
-set shiftwidth=2
-
-"行頭の余白内でTabを打ち込むと、shiftwidthの数だけインデントする
-set smartindent
-
-"タブ幅をスペース４つ分
-set tabstop=4
-
 :syntax on
-":colorscheme jellybeans
 
-" 矢印キーを無効にする
+" invalid arrow keys
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
