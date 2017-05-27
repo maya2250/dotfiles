@@ -26,6 +26,11 @@
   )
 (add-hook 'web-mode-hook 'my-web-mode-init)
 
+(defun my-js-mode-init ()
+  (setq js-indent-level 2)
+  )
+(add-hook 'js-mode-hook 'my-js-mode-init)
+
 					; Scheme coding style
 (defun my-scheme-mode-init ()
   (hs-minor-mode 1)
