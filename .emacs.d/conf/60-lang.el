@@ -6,7 +6,7 @@
 (defun my-c-mode-init ()
   (hs-minor-mode 1)
   (setq c-auto-newline t)
-  (c-set-style "bsd")
+  (setq c-basic-offset 2)
   )
 (add-hook 'c-mode-hook 'my-c-mode-init)
 
