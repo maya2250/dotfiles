@@ -1,3 +1,4 @@
+
 ;; ------------------------------------------------------------------------
 ;; @ variable
 ;; ------------------------------------------------------------------------
@@ -115,7 +116,7 @@
 (setq auto-save-default nil)
 
 ;; ロックファイルを生成しない
- (setq create-lockfiles nil)
+(setq create-lockfiles nil)
 
 ;; 行間
 (setq-default line-spacing v-line-space)
