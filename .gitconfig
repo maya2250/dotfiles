@@ -1,4 +1,4 @@
-# create ".gitconfig.user" for user name and email
+# create ".gitconfig.user" for setting user name and email in the same directory as .gitconfig
 [include]
 	path = .gitconfig.user
 [core]
