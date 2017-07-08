@@ -43,3 +43,4 @@ wget
 wrk
 wxmac
 xz
+docker

@@ -3,3 +3,4 @@ processing
 sqlitebrowser
 vagrant
 xquartz
+docker
