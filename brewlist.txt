@@ -2,7 +2,6 @@ autoconf
 clang-format
 composer
 ctags
-emacs
 erlang
 exiftool
 freetype
