@@ -26,5 +26,6 @@ man() {
 
 # load .bashrc
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 test -f ~/.bashrc && . ~/.bashrc
