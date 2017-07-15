@@ -25,4 +25,6 @@ man() {
 }
 
 # load .bashrc
+eval "$(pyenv init -)"
+
 test -f ~/.bashrc && . ~/.bashrc
