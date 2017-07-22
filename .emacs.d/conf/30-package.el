@@ -2,11 +2,11 @@
 ;; ------------------------------------------------------------------------
 ;; @ Auto Complete
 ;; ------------------------------------------------------------------------
-(ac-config-default)
+;; (ac-config-default)
 
-;; 候補表示時にC-n, C-pで選択
-(define-key ac-complete-mode-map "\C-n" 'ac-next)
-(define-key ac-complete-mode-map "\C-p" 'ac-previous)
+;; ;; 候補表示時にC-n, C-pで選択
+;; (define-key ac-complete-mode-map "\C-n" 'ac-next)
+;; (define-key ac-complete-mode-map "\C-p" 'ac-previous)
 
 ;; ------------------------------------------------------------------------
 ;; @ undo-tree

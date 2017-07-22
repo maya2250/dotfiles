@@ -15,6 +15,8 @@
 
 (setq mc/cmds-to-run-once
       '(
+	beginning-of-buffer
+	electric-newline-and-maybe-indent
 	markdown-exdent-or-delete
 	mouse-drag-secondary
 	))
