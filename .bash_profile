@@ -10,6 +10,9 @@ eval "$(rbenv init -)"
 # phoenix
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
+# node
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 # man
 export MANPAGER='less -R'
 man() {
