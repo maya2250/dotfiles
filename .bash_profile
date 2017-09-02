@@ -40,6 +40,7 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 test -f ~/.bashrc && . ~/.bashrc
