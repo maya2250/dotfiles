@@ -6,6 +6,7 @@ alias em="emacs"
 alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias path="echo $PATH | tr : '\n'"
 alias ocaml="rlwrap ocaml"
+alias mac_sleep="osascript -e 'tell application \"Finder\" to sleep'"
 
 # prompt format
 PS1="[\u@\h \w]\$ "
