@@ -209,6 +209,8 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
+	<key>NSStatusItem Preferred Position Item-0</key>
+	<real>764</real>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -244,11 +246,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>291 271 796 473 0 0 1440 877 </string>
+	<string>367 74 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>99 293 592 584 0 0 1440 877 </string>
+	<string>440 199 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 878 0 0 1440 877 </string>
+	<string>0 424 1440 453 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_801DE310-EEAA-44CF-84FB-B202002C890F</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_801DE310-EEAA-44CF-84FB-B202002C890F_selection</key>
@@ -850,6 +852,8 @@
 			<true/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
+			<key>Place Prompt at First Column</key>
+			<false/>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -897,6 +901,8 @@
 			<true/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<true/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Smart Cursor Color</key>
@@ -1883,7 +1889,7 @@
 	<key>SULastCheckTime</key>
 	<date>2017-09-02T05:17:14Z</date>
 	<key>SavePasteHistory</key>
-	<false/>
+	<true/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
