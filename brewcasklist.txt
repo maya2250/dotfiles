@@ -1,7 +1,12 @@
+android-studio
+appcleaner
 atom
-processing
-sqlitebrowser
-vagrant
-xquartz
 docker
 emacs
+mysqlworkbench
+processing
+pycharm
+sqlitebrowser
+vagrant
+virtualbox
+xquartz

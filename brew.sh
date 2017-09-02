@@ -13,7 +13,7 @@ for package in ${brew_list[@]}; do
 done
 
 for package in ${brew_cask_list[@]}; do
-    brew install ${package}
+    brew cask install ${package}
 done
 
 # delete variables
