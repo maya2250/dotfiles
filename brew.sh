@@ -8,8 +8,13 @@ brew_list=$(cat "brewlist.txt")
 brew_cask_list=$(cat "brewcasklist.txt")
 
 # install packages
-brew install ${brew_list[@]}
-brew cask install ${brew_cask_list[@]}
+for package in ${brew_list[@]}; do
+    brew install ${package}
+done
+
+for package in ${brew_cask_list[@]}; do
+    brew install ${package}
+done
 
 # delete variables
-unset brew_list brew_cask_list
+unset brew_list brew_cask_list package
