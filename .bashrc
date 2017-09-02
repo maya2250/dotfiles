@@ -7,6 +7,7 @@ alias updatedb="sudo /usr/libexec/locate.updatedb"
 alias path="echo $PATH | tr : '\n'"
 alias ocaml="rlwrap ocaml"
 alias mac_sleep="osascript -e 'tell application \"Finder\" to sleep'"
+alias rebuild_spotlight_index="sudo mdutil -E /"
 
 # color
 GREEN="\[\e[1;32m\]"
