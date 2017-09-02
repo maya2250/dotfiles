@@ -43,3 +43,5 @@ wrk
 wxmac
 xz
 docker
+pyenv
+pyenv-virtualenv
