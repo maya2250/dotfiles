@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: create python encoding
+# key: pc
+# --
+# -*- coding: utf-8 -*-
