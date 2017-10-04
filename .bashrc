@@ -10,11 +10,15 @@ alias mac_sleep="osascript -e 'tell application \"Finder\" to sleep'"
 alias rebuild_spotlight_index="sudo mdutil -E /"
 
 # color
-GREEN="\[\e[1;32m\]"
-BLUE="\[\e[1;34m\]"
-RED="\[\e[1;31m\]"
-YELLOW="\[\e[1;33m\]"
 COLOREND="\[\e[00m\]"
+BLACK="\[\e[0;30m\]"
+RED="\[\e[0;31m\]"
+GREEN="\[\e[0;32m\]"
+YELLOW="\[\e[0;33m\]"
+BLUE="\[\e[0;34m\]"
+PURPLE="\[\e[0;35m\]"
+CYAN="\[\e[0;36m\]"
+WHITE="\[\e[0;37m\]"
 
 # get current branch
 function parse_git_branch() {
@@ -30,7 +34,14 @@ function parse_git_branch() {
 
 function promps() {
     tail="${BLUE}›${COLOREND} "
-    PS1="${YELLOW}\w ${COLOREND}$(parse_git_branch)${tail}"
+    PS1="${YELLOW}\w${COLOREND}$(parse_git_branch)${tail}"
 }
 
-PROMPT_COMMAND="promps; $PROMPT_COMMAND"
+function venv_prompt() {
+    if [[ ! -z "${VIRTUAL_ENV}" ]]; then
+        PYTHON_VERSION=`python -V | sed -e 's/Python //g'`
+        PS1="${CYAN}(`basename ${VIRTUAL_ENV}`)${COLOREND}:${CYAN}${PYTHON_VERSION}${COLOREND} ${PS1}"
+    fi
+}
+
+export PROMPT_COMMAND="promps; venv_prompt; $PROMPT_COMMAND"
