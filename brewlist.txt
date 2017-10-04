@@ -1,10 +1,12 @@
 ansible
 arp-scan
 autoconf
+awscli
 boost
 chromedriver
 clang-format
 composer
+cowsay
 ctags
 docker
 doxygen
@@ -46,14 +48,13 @@ node
 ocaml
 openssl
 openssl@1.1
+pcre
 php-cs-fixer
-php71
+php70
 pkg-config
 pngquant
 pstree
 pwgen
-pyenv
-pyenv-virtualenv
 python
 python3
 rbenv
@@ -62,6 +63,7 @@ rlwrap
 ruby-build
 sl
 sqlite
+swig
 tree
 uncrustify
 unixodbc
