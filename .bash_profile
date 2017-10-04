@@ -24,6 +24,9 @@ man() {
 	man "$@"
 }
 
+# venv
+export VIRTUAL_ENV_DISABLE_PROMPT="TRUE"
+
 # nvm to manage nodejs version
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
