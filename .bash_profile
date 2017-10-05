@@ -26,6 +26,12 @@ man() {
 
 # venv
 export VIRTUAL_ENV_DISABLE_PROMPT="TRUE"
+DEFAULT_DIR=${HOME}/.dotfiles/default
+if [ ! -d ${DEFAULT_DIR} ] && type python3 &>/dev/null; then
+    python3 -m venv ${DEFAULT_DIR}
+fi
+source ${DEFAULT_DIR}/bin/activate
+
 
 # nvm to manage nodejs version
 export NVM_DIR="$HOME/.nvm"
