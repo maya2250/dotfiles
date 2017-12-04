@@ -8,6 +8,7 @@ alias path="echo $PATH | tr : '\n'"
 alias ocaml="rlwrap ocaml"
 alias mac_sleep="osascript -e 'tell application \"Finder\" to sleep'"
 alias rebuild_spotlight_index="sudo mdutil -E /"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 # color
 COLOREND="\[\e[00m\]"
