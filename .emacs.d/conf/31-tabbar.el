@@ -36,7 +36,7 @@
   "Return a label for TAB.
 That is, a string used to represent it on the tab bar."
   (let ((label  (if tabbar--buffer-show-groups
-		    ;; ↓の""内でformat指定してるっぽい
+                    ;; ↓の""内でformat指定してるっぽい
                     (format "   [%s]   " (tabbar-tab-tabset tab))
                   (format "   %s   " (tabbar-tab-value tab)))))
     ;; Unless the tab bar auto scrolls to keep the selected tab
@@ -92,7 +92,7 @@ That is, a string used to represent it on the tab bar."
  :background v-unmodifiedund-color
  :foreground v-selected-font-color
  :box nil
-)
+ )
 
 ;; 修正 & 選択
 (set-face-attribute
@@ -100,12 +100,12 @@ That is, a string used to represent it on the tab bar."
  :background v-modified-background-color
  :foreground v-selected-font-color
  :box nil
-)
+ )
 
 (set-face-attribute
  'tabbar-button nil
  :box nil
-)
+ )
 
 ;; C-tab, C-Shift-tabでタブの切替
 (global-set-key (kbd "<C-tab>") 'tabbar-forward-tab)
