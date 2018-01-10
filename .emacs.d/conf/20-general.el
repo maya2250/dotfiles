@@ -149,4 +149,5 @@
   (insert (format-time-string "%Y%m%d(%a) %H:%M:%S" (current-time))))
 
 ;; no tabs
-(setq-default tab-width 4 indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
