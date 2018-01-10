@@ -120,9 +120,6 @@
 ;; 行間
 (setq-default line-spacing v-line-space)
 
-;; full screen
-;; (set-frame-parameter nil 'fullscreen 'fullboth)
-
 ;; maximize screen
 (set-frame-parameter nil 'fullscreen 'maximized)
 
@@ -132,20 +129,8 @@
 ;; 警告音・フラッシュを無効
 (setq ring-bell-function 'ignore)
 
-;; collapse
-;; (define-key global-map (kbd "C-#") 'hs-toggle-hiding)
-;; (global-set-key (kbd "C-(") 'hs-hide-block)
-;; (global-set-key (kbd "C-)") 'hs-show-block)
-;; (global-set-key (kbd "C-M-(") 'hs-hide-all)
-;; (global-set-key (kbd "C-M-)") 'hs-show-all)
-
 ;; auto reload buffer
 (global-auto-revert-mode 1)
-
-;; current time
-(defun insert-current-time()
-  (interactive)
-  (insert (format-time-string "%Y%m%d(%a) %H:%M:%S" (current-time))))
 
 ;; no tabs
 (setq-default indent-tabs-mode nil)
