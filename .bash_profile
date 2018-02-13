@@ -41,4 +41,8 @@ alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+# aws credential
+export AWS_ACCESS_KEY_ID=$(grep aws_access ~/.aws/credentials | cut -d" " -f 3)
+export AWS_SECRET_ACCESS_KEY=$(grep aws_secret ~/.aws/credentials | cut -d" " -f 3)
+
 test -f ~/.bashrc && . ~/.bashrc
