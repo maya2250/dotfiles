@@ -9,6 +9,7 @@ alias ocaml="rlwrap ocaml"
 alias mac_sleep="osascript -e 'tell application \"Finder\" to sleep'"
 alias rebuild_spotlight_index="sudo mdutil -E /"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias be="bundle exec"
 
 # color
 COLOREND="\[\e[00m\]"
