@@ -20,3 +20,4 @@
 	me = merge
 	d = diff
 	dc = diff --cached
+	dwd = diff --word-diff
