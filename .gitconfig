@@ -26,3 +26,5 @@
 	r = rebase
 	ri = rebase -i
 	rc = rebase --continue
+	p = push
+	pc = !git push -u origin `git rev-parse --abbrev-ref HEAD`
