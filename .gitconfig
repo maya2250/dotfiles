@@ -32,3 +32,5 @@
 	rc = rebase --continue
 	p = push
 	pc = !git push -u origin `git rev-parse --abbrev-ref HEAD`
+	pcf = !git push -fu origin `git rev-parse --abbrev-ref HEAD`
+
