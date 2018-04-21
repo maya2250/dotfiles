@@ -10,6 +10,7 @@
 	# graph
 	g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	lp = log -p
+	ls = log --stat
 	s = status
 	cm = commit
 	cmm = commit -m
@@ -24,6 +25,7 @@
 	bd = branch -D
 	bdr = branch -rd
 	me = merge
+	mes = merge --squash
 	d = diff
 	dc = diff --cached
 	dwd = diff --word-diff
