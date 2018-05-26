@@ -28,16 +28,16 @@ function parse_git_branch() {
     branch="$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/')"
     if [[ $branch != "" ]]; then
         if [[ $(git status 2> /dev/null | tail -n1) == "nothing to commit, working tree clean" ]]; then
-            echo "${GREEN}$branch${COLOREND} "
+            echo "${GREEN}$branch${COLOREND}"
         else
-            echo "${RED}$branch${COLOREND} "
+            echo "${RED}$branch${COLOREND}"
         fi
     fi
 }
 
 function promps() {
-    tail="${BLUE}›${COLOREND} "
-    PS1="${YELLOW}\w${COLOREND}$(parse_git_branch)${tail}"
+    tail="${WHITE}›${COLOREND}"
+    PS1="${YELLOW}\w${COLOREND}$(parse_git_branch) ${tail} "
 }
 
 export PROMPT_COMMAND="promps; $PROMPT_COMMAND"
