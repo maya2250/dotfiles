@@ -1,3 +1,5 @@
+test -f ~/.bashrc && . ~/.bashrc
+
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 # Add `~/bin` to the `$PAHT`
@@ -46,6 +48,5 @@ export AWS_ACCESS_KEY_ID=$(grep aws_access ~/.aws/credentials | cut -d" " -f 3)
 export AWS_SECRET_ACCESS_KEY=$(grep aws_secret ~/.aws/credentials | cut -d" " -f 3)
 complete -C `which aws_completer` aws
 
-test -f ~/.bashrc && . ~/.bashrc
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
