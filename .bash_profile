@@ -24,13 +24,13 @@ man() {
 	man "$@"
 }
 
-# venv
+# venv prompt
 export VIRTUAL_ENV_DISABLE_PROMPT="TRUE"
-DEFAULT_DIR=${HOME}/.dotfiles/default
-if [ ! -d ${DEFAULT_DIR} ] && type python3 &>/dev/null; then
-    python3 -m venv ${DEFAULT_DIR}
+
+# pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
 fi
-source ${DEFAULT_DIR}/bin/activate
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use # This loads nvm

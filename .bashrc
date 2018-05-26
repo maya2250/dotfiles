@@ -40,11 +40,4 @@ function promps() {
     PS1="${YELLOW}\w${COLOREND}$(parse_git_branch)${tail}"
 }
 
-function venv_prompt() {
-    if [[ ! -z "${VIRTUAL_ENV}" ]]; then
-        PYTHON_VERSION=`python -V | sed -e 's/Python //g'`
-        PS1="${CYAN}(`basename ${VIRTUAL_ENV}`)${COLOREND}:${CYAN}${PYTHON_VERSION}${COLOREND} ${PS1}"
-    fi
-}
-
-export PROMPT_COMMAND="promps; venv_prompt; $PROMPT_COMMAND"
+export PROMPT_COMMAND="promps; $PROMPT_COMMAND"
