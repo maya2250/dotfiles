@@ -2,11 +2,13 @@ android-studio
 appcleaner
 atom
 docker
+dropbox
 emacs
+iterm2
 mysqlworkbench
 processing
 pycharm
-sqlitebrowser
+spotify
 vagrant
 virtualbox
 xquartz
