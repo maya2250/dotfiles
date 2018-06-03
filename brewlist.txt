@@ -5,6 +5,8 @@ arp-scan
 aspell
 autoconf
 awscli
+bash
+bash-completion@2
 boost
 clang-format
 composer
@@ -35,6 +37,7 @@ imagemagick
 isl
 jpeg
 jpegoptim
+kubernetes-cli
 libffi
 libidn2
 libmpc

@@ -50,3 +50,8 @@ complete -C `which aws_completer` aws
 
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
+# bash-completion
+if [ -f /usr/local/share/bash-completion/bash_completion ]; then
+  . /usr/local/share/bash-completion/bash_completion
+fi
