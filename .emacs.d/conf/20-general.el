@@ -4,13 +4,6 @@
 ;; 色・数値を格納する変数定義
 ;; 変数の先頭にv-(variable)をつける
 
-
-;; 行番号の色
-(setq v-line-number-color "#0669a3")
-
-;; 行番号の高さ
-(setq v-line-number-height 0.9)
-
 ;; 括弧選択色
 (setq v-parenthesis-color "#4F4FD9")
 
@@ -67,12 +60,7 @@
       (format "%%f - Emacs@%s" (system-name)))
 
 ;; 行番号表示
-(global-linum-mode t)
-
-;; 行番号色・高さ
-(set-face-attribute 'linum nil
-                    :foreground v-line-number-color
-                    :height v-line-number-height)
+(global-display-line-numbers-mode)
 
 ;; 行番号フォーマットset
 (setq linum-format "%4d")
@@ -82,12 +70,6 @@
 
 ;; 括弧のみを強調
 (setq show-paren-style 'parenthesis)
-
-;; 括弧強調するまでの遅延(0:遅延なし)
-(setq show-paren-delay 0)
-(set-face-attribute 'show-paren-match-face nil
-                    :background nil :foreground nil
-                    :underline v-show-paren-color :weight 'extra-bold)
 
 ;; 括弧の補完
 (electric-pair-mode 1)
