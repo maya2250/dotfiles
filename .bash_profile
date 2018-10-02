@@ -44,9 +44,9 @@ alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 # aws
-export AWS_ACCESS_KEY_ID=$(grep aws_access ~/.aws/credentials | cut -d" " -f 3)
-export AWS_SECRET_ACCESS_KEY=$(grep aws_secret ~/.aws/credentials | cut -d" " -f 3)
-complete -C `which aws_completer` aws
+if [ -f ~/.aws/credentials ]; then export AWS_ACCESS_KEY_ID=$(grep aws_access ~/.aws/credentials | cut -d" " -f 3); fi
+if [ -f ~/.aws/credentials ]; then export AWS_SECRET_ACCESS_KEY=$(grep aws_secret ~/.aws/credentials | cut -d" " -f 3); fi
+hash aws_completer 2> /dev/null && complete -C `which aws_completer` aws
 
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
