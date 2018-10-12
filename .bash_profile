@@ -55,3 +55,5 @@ export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 if [ -f /usr/local/share/bash-completion/bash_completion ]; then
   . /usr/local/share/bash-completion/bash_completion
 fi
+
+hash go 2> /dev/null && export PATH=`go env GOPATH`/bin:$PATH
