@@ -56,4 +56,7 @@ if [ -f /usr/local/share/bash-completion/bash_completion ]; then
   . /usr/local/share/bash-completion/bash_completion
 fi
 
-hash go 2> /dev/null && export PATH=`go env GOPATH`/bin:$PATH
+if hash go 2> /dev/null; then
+  export GOPATH=~/dev/go
+  export PATH=`go env GOPATH`/bin:$PATH
+fi
