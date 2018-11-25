@@ -48,4 +48,6 @@
   )
 (add-hook 'scss-mode-hook 'my-scss-mode-init)
 
+(add-hook 'before-save-hook 'gofmt-before-save)
+
 (setq ruby-insert-encoding-magic-comment nil)
