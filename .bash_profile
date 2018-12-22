@@ -6,8 +6,10 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 export PATH="$PATH:$HOME/bin"
 
 # ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -d $HOME/.rbenv ]; then
+    export PATH="$HOME/.rbenv/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
 
 # phoenix
 test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
@@ -28,6 +30,9 @@ man() {
 
 # venv prompt
 export VIRTUAL_ENV_DISABLE_PROMPT="TRUE"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
 # pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
