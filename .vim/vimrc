@@ -8,7 +8,9 @@ set shiftwidth=2       " set shift moving width
 set tabstop=4          " tab width
 
 set list               " show invisible character
-set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+
+scriptencoding utf-8
+set encoding=utf-8
 
 :syntax on
 colorscheme jellybeans
