@@ -13,7 +13,7 @@
   (package-refresh-contents))
 (package-install-selected-packages)
 
-(load-theme 'misterioso' t)  ;; theme
+(load-theme 'tango-dark' t)  ;; theme
 
 (setq inhibit-startup-screen t)  ;; disable startup screen
 (setq initial-scratch-message "")  ;; set empty message to scratch
