@@ -65,3 +65,6 @@
 ;; packages
 (eval-when-compile
   (require 'use-package))
+
+(use-package yasnippet
+  :init (yas-global-mode t))
