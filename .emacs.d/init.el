@@ -1,6 +1,17 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+;; https://www.reddit.com/r/emacs/comments/53zpv9/how_do_i_get_emacs_to_stop_adding_custom_fields/
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(when (file-exists-p custom-file)
+  (load custom-file))
+
 (package-initialize)
+
+;; install package-selected-packages defined in custom.el
+(unless package-archive-contents
+  (package-refresh-contents))
+(package-install-selected-packages)
 
 (load-theme 'misterioso' t)  ;; theme
 
