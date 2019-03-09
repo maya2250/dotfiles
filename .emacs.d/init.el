@@ -68,3 +68,8 @@
 
 (use-package yasnippet
   :init (yas-global-mode t))
+
+(use-package hiwin
+  :init
+  (hiwin-activate)
+  (set-face-background 'hiwin-face "gray32"))
