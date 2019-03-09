@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: heredoc_is_here_document
-# key: heredoc
-# --
-"""
-$0
-"""
