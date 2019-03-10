@@ -81,3 +81,14 @@
 (use-package company
   :init
   (add-hook 'after-init-hook 'global-company-mode))
+
+(use-package ido
+  :init
+  (ido-mode t)
+  (ido-everywhere t)
+  (ido-vertical-mode t)
+  (setq ido-vertical-define-keys 'C-n-and-C-p-only)
+  (set-face-attribute 'ido-vertical-first-match-face nil
+                      :foreground "orange")
+  (set-face-attribute 'ido-subdir nil
+                      :foreground "deep sky blue"))
