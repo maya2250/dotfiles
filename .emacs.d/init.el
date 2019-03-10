@@ -110,3 +110,7 @@
   :init
   (global-flycheck-mode)
   (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc)))
+
+(use-package mozc
+  :init
+  (setq default-input-method "japanese-mozc"))
