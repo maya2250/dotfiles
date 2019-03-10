@@ -92,3 +92,13 @@
                       :foreground "orange")
   (set-face-attribute 'ido-subdir nil
                       :foreground "deep sky blue"))
+
+(use-package smex
+  :bind
+  ("M-x" . smex)
+  ("M-X" . smex-major-mode-commands)
+  ("C-c C-c M-x" . execute-extended-command)
+  :init
+  (smex-initialize)
+  (defun smex-prepare-ido-bindings ()
+    (define-key ido-completion-map (kbd "C-h") 'delete-backward-char)))
