@@ -73,3 +73,7 @@
   :init
   (hiwin-activate)
   (set-face-background 'hiwin-face "gray32"))
+
+(use-package company
+  :init
+  (add-hook 'after-init-hook 'global-company-mode))
