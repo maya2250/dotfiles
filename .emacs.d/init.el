@@ -102,3 +102,11 @@
   (smex-initialize)
   (defun smex-prepare-ido-bindings ()
     (define-key ido-completion-map (kbd "C-h") 'delete-backward-char)))
+
+(use-package flycheck
+  :bind
+  ("C-c n" . flycheck-next-error)
+  ("C-c p" . flycheck-previous-error)
+  :init
+  (global-flycheck-mode)
+  (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc)))
