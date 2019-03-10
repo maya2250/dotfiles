@@ -39,7 +39,11 @@
 (add-to-list 'default-frame-alist '(cursor-type . bar))
 (add-to-list 'default-frame-alist '(cursor-color . "#ff9200"))
 
-(setq-default show-trailing-whitespace t)  ;; show useless whitespace at the end of a line
+;; show useless whitespace at the end of a line
+(defun my/show-trailing-whitespace-hook ()
+  (setq show-trailing-whitespace t))
+(add-hook 'prog-mode-hook 'my/show-trailing-whitespace-hook)
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (setq make-backup-files nil)  ;; disable to create backup~ files
