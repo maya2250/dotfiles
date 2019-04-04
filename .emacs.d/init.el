@@ -39,6 +39,12 @@
 (add-to-list 'default-frame-alist '(cursor-type . bar))
 (add-to-list 'default-frame-alist '(cursor-color . "#ff9200"))
 
+;; font
+(when (member "Ricty" (font-family-list))
+  (add-to-list 'default-frame-alist '(font . "Ricty 11")))
+
+(setq-default line-spacing 3)
+
 ;; show useless whitespace at the end of a line
 (defun my/show-trailing-whitespace-hook ()
   (setq show-trailing-whitespace t))
