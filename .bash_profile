@@ -56,10 +56,9 @@ hash aws_completer 2> /dev/null && complete -C `which aws_completer` aws
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 
-# bash-completion
-if [ -f /usr/local/share/bash-completion/bash_completion ]; then
-  . /usr/local/share/bash-completion/bash_completion
-fi
+# completion
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
 
 if hash go 2> /dev/null; then
   export GOPATH=~/dev/go
