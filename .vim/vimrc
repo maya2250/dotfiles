@@ -13,7 +13,7 @@ scriptencoding utf-8
 set encoding=utf-8
 
 :syntax on
-colorscheme jellybeans
+colorscheme desert
 
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
