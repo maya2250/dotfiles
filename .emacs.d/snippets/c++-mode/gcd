@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: gcd
+# key: gcd
+# --
+template <class T>
+T GCD(T a, T b) { return b == 0 ? a : GCD(b, a%b); }
