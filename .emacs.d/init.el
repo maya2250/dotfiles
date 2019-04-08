@@ -88,6 +88,16 @@
   :init
   (add-hook 'after-init-hook 'global-company-mode))
 
+(use-package company-jedi
+  :config
+  (setq jedi:environment-virtualenv (list (expand-file-name "~/.emacs.d/.python-environments/")))
+  (add-hook 'python-mode-hook 'jedi:setup)
+  (setq jedi:complete-on-dot t)
+  (setq jedi:use-shortcuts t)
+  (defun config/enable-company-jedi ()
+    (add-to-list 'company-backends 'company-jedi))
+  (add-hook 'python-mode-hook 'config/enable-company-jedi))
+
 (use-package ido
   :init
   (ido-mode t)
