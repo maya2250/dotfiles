@@ -137,3 +137,11 @@
   :mode (("README\\.md\\'" . gfm-mode)
          ("\\.md\\'" . markdown-mode))
   :init (setq markdown-command "multimarkdown"))
+
+(use-package gitignore-mode
+  :init
+  (add-to-list 'auto-mode-alist
+               (cons "/.dockerignore\\'" 'gitignore-mode))
+  (defun my/gitignore-mode-hook ()
+    (setq require-final-newline t))
+  (add-hook 'gitignore-mode-hook 'my/gitignore-mode-hook))
