@@ -151,3 +151,10 @@
   (defun my/gitignore-mode-hook ()
     (setq require-final-newline t))
   (add-hook 'gitignore-mode-hook 'my/gitignore-mode-hook))
+
+(use-package powerline
+  :init
+  (powerline-default-theme)
+  (set-face-attribute 'mode-line nil
+                      :background "DarkOrange")
+  (setq powerline-default-separator 'box))
