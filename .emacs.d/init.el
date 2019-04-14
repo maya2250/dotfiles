@@ -98,6 +98,12 @@
     (add-to-list 'company-backends 'company-jedi))
   (add-hook 'python-mode-hook 'config/enable-company-jedi))
 
+(use-package pipenv
+  :hook (python-mode . pipenv-mode)
+  :init
+  (setq pipenv-projectile-after-switch-function
+        #'pipenv-projectile-after-switch-extended))
+
 (use-package ido
   :init
   (ido-mode t)
