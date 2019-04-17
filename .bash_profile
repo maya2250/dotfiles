@@ -64,3 +64,5 @@ if hash go 2> /dev/null; then
   export GOPATH=~/dev/go
   export PATH=`go env GOPATH`/bin:$PATH
 fi
+
+test -d ~/.local/bin && export PATH=~/.local/bin:$PATH
