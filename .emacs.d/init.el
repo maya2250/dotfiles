@@ -158,3 +158,7 @@
   (set-face-attribute 'mode-line nil
                       :background "DarkOrange")
   (setq powerline-default-separator 'box))
+
+(use-package yaml-mode
+  :init
+  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode)))
