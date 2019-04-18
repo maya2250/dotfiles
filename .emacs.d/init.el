@@ -135,7 +135,8 @@
 
 (use-package mozc
   :init
-  (setq default-input-method "japanese-mozc"))
+  (setq default-input-method "japanese-mozc")
+  (setq mozc-candidate-style 'echo-area))
 
 (use-package markdown-mode
   :ensure t
