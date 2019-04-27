@@ -11,6 +11,7 @@ alias rebuild_spotlight_index="sudo mdutil -E /"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias be="bundle exec"
 alias g="git"
+alias globalip="curl inet-ip.info"
 test `uname` == "Linux" && alias pbcopy="xsel --clipboard --input"
 
 # color
