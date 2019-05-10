@@ -165,6 +165,11 @@
 (use-package emmet-mode
   :hook web-mode)
 
+(use-package editorconfig
+  :ensure t
+  :config
+  (editorconfig-mode 1))
+
 (use-package multiple-cursors
   :bind
   ("C->" . mc/mark-next-like-this)
