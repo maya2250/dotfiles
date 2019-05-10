@@ -162,6 +162,12 @@
   :init
   (add-to-list 'auto-mode-alist '("components\\/.*\\.js\\'" . rjsx-mode)))
 
+(use-package web-mode
+  :mode "\\.html\\'")
+
+(use-package emmet-mode
+  :hook web-mode)
+
 (use-package multiple-cursors
   :bind
   ("C->" . mc/mark-next-like-this)
