@@ -140,9 +140,8 @@
   :init (setq markdown-command "multimarkdown"))
 
 (use-package gitignore-mode
+  :mode ("\\.dockerignore\\'" . gitignore-mode)
   :init
-  (add-to-list 'auto-mode-alist
-               (cons "/.dockerignore\\'" 'gitignore-mode))
   (defun my/gitignore-mode-hook ()
     (setq require-final-newline t))
   (add-hook 'gitignore-mode-hook 'my/gitignore-mode-hook))
@@ -155,12 +154,10 @@
   (setq powerline-default-separator 'box))
 
 (use-package yaml-mode
-  :init
-  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode)))
+  :mode ("\\.ya?ml\\'" . yaml-mode))
 
 (use-package rjsx-mode
-  :init
-  (add-to-list 'auto-mode-alist '("components\\/.*\\.js\\'" . rjsx-mode)))
+  :mode ("components\\/.*\\.js\\'" . rjsx-mode))
 
 (use-package web-mode
   :mode "\\.html\\'")
