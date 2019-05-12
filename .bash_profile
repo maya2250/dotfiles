@@ -2,8 +2,7 @@ test -f ~/.bashrc && . ~/.bashrc
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
-# Add `~/bin` to the `$PAHT`
-export PATH="$PATH:$HOME/bin"
+[[ -d $HOME/.bin ]] && export PATH="$PATH:$HOME/.bin"
 
 # ruby
 if [ -d $HOME/.rbenv ]; then
