@@ -8,7 +8,6 @@ alias la='ls -aFG'
 alias ll='ls -alFG'
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 alias updatedb="sudo /usr/libexec/locate.updatedb"
-alias path="echo $PATH | tr : '\n'"
 alias ocaml="rlwrap ocaml"
 alias mac_sleep="osascript -e 'tell application \"Finder\" to sleep'"
 alias rebuild_spotlight_index="sudo mdutil -E /"
@@ -17,6 +16,8 @@ alias be="bundle exec"
 alias g="git"
 alias globalip="curl inet-ip.info"
 test `uname` == "Linux" && alias pbcopy="xsel --clipboard --input"
+
+function path { echo $PATH | tr : '\n'; }
 
 # color
 COLOREND="\[\e[00m\]"
