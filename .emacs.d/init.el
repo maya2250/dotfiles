@@ -171,6 +171,10 @@
 (use-package emmet-mode
   :hook web-mode)
 
+(use-package go-mode
+  :config
+  (add-hook 'before-save-hook #'gofmt-before-save))
+
 (use-package editorconfig
   :ensure t
   :config

@@ -49,7 +49,7 @@ export PATH="/usr/local/opt/icu4c/sbin:$PATH"
     . /usr/share/bash-completion/bash_completion
 
 if hash go 2> /dev/null; then
-  export GOPATH=~/dev/go
+  export GOPATH=~/.go
   export PATH=`go env GOPATH`/bin:$PATH
 fi
 
