@@ -1,6 +1,8 @@
 # If not running interactively, do not do anything
 [[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
+if [[ -z "$TMUX" ]]; then
+    tmux attach || exec tmux
+fi
 
 # alias
 alias ls='ls -FG'
