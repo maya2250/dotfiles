@@ -84,6 +84,16 @@
   (hiwin-activate)
   (set-face-background 'hiwin-face "gray32"))
 
+(use-package lsp-mode
+  :config
+  (add-hook 'prog-mode-hook #'lsp))
+
+(use-package lsp-ui)
+
+(use-package company-lsp
+  :config
+  (push 'company-lsp company-backends))
+
 (use-package company
   :init
   (add-hook 'after-init-hook 'global-company-mode))
