@@ -62,6 +62,8 @@
 
 (setq-default indent-tabs-mode nil)
 
+(desktop-save-mode 1)
+
 ;; keymap
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "C-?") 'help)

@@ -10,3 +10,5 @@
 /.python-environments/
 /tramp
 /.lsp-session-*
+/.emacs.desktop
+/.emacs.desktop.lock
