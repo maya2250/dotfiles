@@ -223,3 +223,8 @@
 (use-package rainbow-mode
   :hook prog-mode
   :diminish 'rainbow-mode)
+
+(use-package which-key
+  :config
+  (which-key-mode)
+  :diminish 'which-key-mode)
