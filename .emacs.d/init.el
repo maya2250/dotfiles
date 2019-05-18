@@ -33,6 +33,8 @@
 (set-face-attribute 'show-paren-match nil
 		    :background nil :underline "gray50")
 
+(set-face-attribute 'fringe nil :background "#2e3436") ;; right fringe background color
+
 (electric-pair-mode 1)  ;; complete parentesis
 
 ;; set cursor style and color
