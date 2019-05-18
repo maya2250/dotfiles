@@ -79,7 +79,8 @@
   (require 'use-package))
 
 (use-package yasnippet
-  :init (yas-global-mode t))
+  :init (yas-global-mode t)
+  :diminish 'yas-minor-mode)
 
 (use-package hiwin
   :init
@@ -98,7 +99,8 @@
 
 (use-package company
   :init
-  (add-hook 'after-init-hook 'global-company-mode))
+  (add-hook 'after-init-hook 'global-company-mode)
+  :diminish 'company-mode)
 
 (defvar my/default_venv_directory "~/.emacs.d/.python-environments/default")
 
@@ -194,7 +196,8 @@
 (use-package editorconfig
   :ensure t
   :config
-  (editorconfig-mode 1))
+  (editorconfig-mode 1)
+  :diminish editorconfig-mode)
 
 (use-package multiple-cursors
   :bind
@@ -203,3 +206,7 @@
   ("C-c C-<" . mc/mark-all-like-this))
 
 (use-package magit)
+
+(use-package diminish
+  :config
+  (diminish 'eldoc-mode))
