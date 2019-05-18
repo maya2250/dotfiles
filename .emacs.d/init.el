@@ -217,3 +217,7 @@
   :config
   (global-git-gutter-mode t)
   :diminish 'git-gutter-mode)
+
+(use-package rainbow-mode
+  :hook prog-mode
+  :diminish 'rainbow-mode)
