@@ -187,6 +187,10 @@
   :config
   (add-hook 'before-save-hook #'gofmt-before-save))
 
+(use-package org
+  :config
+  (setq system-time-locale "C"))
+
 (use-package editorconfig
   :ensure t
   :config
