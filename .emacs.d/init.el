@@ -212,3 +212,8 @@
 (use-package diminish
   :config
   (diminish 'eldoc-mode))
+
+(use-package git-gutter
+  :config
+  (global-git-gutter-mode t)
+  :diminish 'git-gutter-mode)
