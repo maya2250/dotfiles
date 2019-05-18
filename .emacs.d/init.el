@@ -91,7 +91,9 @@
   :config
   (add-hook 'prog-mode-hook #'lsp))
 
-(use-package lsp-ui)
+(use-package lsp-ui
+  :config
+  (setq lsp-prefer-flymake nil))
 
 (use-package company-lsp
   :config
