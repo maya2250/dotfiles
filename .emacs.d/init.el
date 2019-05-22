@@ -228,3 +228,13 @@
   :config
   (which-key-mode)
   :diminish 'which-key-mode)
+
+(use-package neotree
+  :bind
+  ("<f8>" . neotree-toggle)
+  :config
+  (defun my/neotree-hook ()
+    (display-line-numbers-mode -1))
+  (add-hook 'neotree-mode-hook 'my/neotree-hook)
+  :custom
+  (neo-theme 'ascii))
