@@ -193,6 +193,8 @@
   :config
   (add-hook 'before-save-hook #'gofmt-before-save))
 
+(use-package slim-mode)
+
 (use-package org
   :config
   (setq system-time-locale "C"))
