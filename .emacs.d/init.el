@@ -196,8 +196,9 @@
 (use-package slim-mode)
 
 (use-package org
-  :config
-  (setq system-time-locale "C"))
+  :custom
+  (system-time-locale "C")
+  (org-clock-clocktable-default-properties '(:maxlevel 3)))
 
 (use-package editorconfig
   :ensure t
