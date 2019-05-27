@@ -180,6 +180,9 @@
 (use-package yaml-mode
   :mode ("\\.ya?ml\\'" . yaml-mode))
 
+(use-package typescript-mode
+  :mode "\\.ts?x\\'")
+
 (use-package rjsx-mode
   :mode ("components\\/.*\\.js\\'" . rjsx-mode))
 
