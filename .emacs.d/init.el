@@ -95,7 +95,13 @@
 
 (use-package lsp-ui
   :config
-  (setq lsp-prefer-flymake nil))
+  (setq lsp-prefer-flymake nil
+        lsp-ui-doc-enable nil
+        lsp-ui-peek-enable nil
+        ;; lsp-ui-sideline-enable nil
+        ;; lsp-ui-imenu-enable nil
+        )
+  )
 
 (use-package company-lsp
   :config
@@ -244,3 +250,9 @@
   (add-hook 'neotree-mode-hook 'my/neotree-hook)
   :custom
   (neo-theme 'ascii))
+
+(use-package highlight-indent-guides
+  :hook ((prog-mode . highlight-indent-guides-mode)
+         (yaml-mode . highlight-indent-guides-mode))
+  :custom (highlight-indent-guides-method 'column)
+  :diminish 'highlight-indent-guides-mode)
