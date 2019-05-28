@@ -233,7 +233,7 @@
   :diminish 'git-gutter-mode)
 
 (use-package rainbow-mode
-  :hook prog-mode
+  :hook (web-mode html-mode css-mode js-mode emacs-lisp-mode)
   :diminish 'rainbow-mode)
 
 (use-package which-key
