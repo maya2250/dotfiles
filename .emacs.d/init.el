@@ -256,3 +256,8 @@
          (yaml-mode . highlight-indent-guides-mode))
   :custom (highlight-indent-guides-method 'column)
   :diminish 'highlight-indent-guides-mode)
+
+(use-package undo-tree
+  :config
+  (global-undo-tree-mode)
+  :diminish 'undo-tree-mode)
