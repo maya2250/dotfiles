@@ -261,3 +261,5 @@
   :config
   (global-undo-tree-mode)
   :diminish 'undo-tree-mode)
+
+(use-package fish-mode)
