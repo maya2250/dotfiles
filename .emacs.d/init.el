@@ -202,6 +202,9 @@
   :config
   (add-hook 'before-save-hook #'gofmt-before-save))
 
+(use-package ruby-mode
+  :custom (ruby-insert-encoding-magic-comment nil))
+
 (use-package slim-mode)
 
 (use-package org
