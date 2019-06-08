@@ -37,6 +37,9 @@
 
 (electric-pair-mode 1)  ;; complete parentesis
 
+(setq display-time-24hr-format t)
+(display-time-mode 1)
+
 ;; set cursor style and color
 (add-to-list 'default-frame-alist '(cursor-type . bar))
 (add-to-list 'default-frame-alist '(cursor-color . "#ff9200"))
