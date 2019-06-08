@@ -263,6 +263,7 @@
 (use-package undo-tree
   :config
   (global-undo-tree-mode)
+  (unbind-key "C-?" undo-tree-map)
   :diminish 'undo-tree-mode)
 
 (use-package fish-mode)
