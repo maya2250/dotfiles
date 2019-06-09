@@ -27,12 +27,6 @@ man() {
 	man "$@"
 }
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use # This loads nvm
-
-alias node='unalias node ; unalias npm ; nvm use default ; node $@'
-alias npm='unalias node ; unalias npm ; nvm use default ; npm $@'
-
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
