@@ -27,6 +27,12 @@ man() {
 	man "$@"
 }
 
+# n
+if hash n 2> /dev/null; then
+    export N_PREFIX="$HOME/.n"
+    export PATH+=":$N_PREFIX/bin"
+fi
+
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
