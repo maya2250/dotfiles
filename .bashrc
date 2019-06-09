@@ -5,19 +5,23 @@ if [[ -z "$TMUX" ]]; then
 fi
 
 # alias
-alias ls='ls -FG'
-alias la='ls -aFG'
-alias ll='ls -alFG'
-alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
-alias updatedb="sudo /usr/libexec/locate.updatedb"
-alias ocaml="rlwrap ocaml"
-alias mac_sleep="osascript -e 'tell application \"Finder\" to sleep'"
-alias rebuild_spotlight_index="sudo mdutil -E /"
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+case `uname --kernel-name` in
+    Linux)
+        alias ls='ls --color -F'
+        alias ll='ls --color -alF'
+        alias la='ls --color -A'
+        alias pbcopy="xsel --clipboard --input"
+        ;;
+    Darwin)
+        alias ls='ls -FG'
+        alias la='ls -aFG'
+        alias ll='ls -alFG'
+        ;;
+esac
+
 alias be="bundle exec"
 alias g="git"
 alias globalip="curl inet-ip.info"
-test `uname` == "Linux" && alias pbcopy="xsel --clipboard --input"
 
 function path { echo $PATH | tr : '\n'; }
 
