@@ -214,7 +214,8 @@
   :custom
   (system-time-locale "C")
   (org-clock-clocktable-default-properties '(:maxlevel 3))
-  (org-adapt-indentation nil))
+  (org-adapt-indentation nil)
+  (org-edit-src-content-indentation 0))
 
 (use-package editorconfig
   :ensure t
