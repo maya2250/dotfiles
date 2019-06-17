@@ -1,6 +1,6 @@
 # If not running interactively, do not do anything
 [[ $- != *i* ]] && return
-if [[ -z "$TMUX" ]]; then
+if [[ -z "$TMUX" ]] && hash tmux 2> /dev/null; then
     tmux attach || exec tmux
 fi
 
