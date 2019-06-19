@@ -39,6 +39,10 @@ man() {
 	man "$@"
 }
 
+if hash aws_completer 2> /dev/null; then
+    complete -C aws_completer aws
+fi
+
 # color
 COLOREND="\[\e[00m\]"
 BLACK="\[\e[0;30m\]"
