@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: maya2250/dotfiles:latest
+    working_directory: ~/project
+    steps:
+      - checkout
+      - run: ./install
+      - run: ./install_brew
+      - run: sudo -E ./ubuntu/install_deb_packages
+      - run: sudo -E ./ubuntu/install_apt_packages
+      - run: sudo -E ./ubuntu/install_powerline
