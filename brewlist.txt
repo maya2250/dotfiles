@@ -6,3 +6,4 @@ n
 pipenv
 rbenv
 tmux
+vim

@@ -1,5 +1,25 @@
 #!/usr/bin/env bash
 
+set -e
+
+if hash brew 2> /dev/null; then
+    :
+elif hash curl 2> /dev/null; then
+    case `uname --kernel-name` in
+        Linux)
+            yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+            test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+            test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+            ;;
+        Darwin)
+            yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+            ;;
+    esac
+else
+    echo -e "Couldn't install linuxbrew because not found curl" >&2
+    exit 1
+fi
+
 # move to directory existing this shell-script
 cd $(dirname $0)
 
