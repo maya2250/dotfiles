@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+set -e
+
+# key repeat
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 12
+gsettings set org.gnome.desktop.peripherals.keyboard delay 181
+
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"  # CapsLock to Ctrl
+gsettings set org.gnome.desktop.interface gtk-key-theme 'Emacs'  # use Emacs keybinding
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab', '<Alt>Tab']"
+
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false  # automatically hide dock
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 44  # dock size
+
+gsettings set org.gnome.desktop.session idle-delay 0  # blank screen time
+
+gsettings set org.gnome.settings-daemon.plugins.power idle-dim false  # org.gnome.desktop.screensaver lock-delay 0
+gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'suspend'  # power button action
+
+gsettings set org.gnome.desktop.interface enable-animations false  # disable animation
+
+gsettings set org.gnome.desktop.background show-desktop-icons false  # hide desktop icons
+
+gsettings set org.gnome.desktop.interface show-battery-percentage true  # show battery percentage
+
+gsettings set org.gnome.desktop.notifications show-banners false  # notification popup
+gsettings set org.gnome.desktop.notifications show-in-lock-screen false  # notification in lock-screen
+
+gsettings set org.gnome.desktop.datetime automatic-timezone true  # set timezone automatically
+
+gsettings set org.gnome.mutter edge-tiling false  # expand window when move window to edge
+
+gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'  # focus window setting
+
+gsettings set org.gnome.desktop.input-sources mru-sources "[('ibus', 'mozc-jp'), ('xkb', 'us')]"
+
+gsettings set org.gnome.desktop.peripherals.touchpad speed 0.56204379562043805  # touchpad speed
+
+# clock format
+gsettings set org.gnome.desktop.interface clock-format '24h'
+gsettings set org.gnome.desktop.interface clock-show-weekday true
+gsettings set org.gnome.desktop.interface clock-show-date true
+gsettings set org.gnome.desktop.interface clock-show-seconds true
