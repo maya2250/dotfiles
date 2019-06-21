@@ -1,0 +1,12 @@
+emacs-mozc-bin
+cmus
+guake
+arp-scan
+dconf-cli
+dconf-editor
+tree
+gnome-tweaks
+mysql-client
+python3-pip
+xsel
+pinta

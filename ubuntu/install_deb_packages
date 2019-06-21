@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [[ $(id -u) != 0 ]]; then
+    echo Operation not permitted >&2
+    exit 1
+fi
+
+cd $(dirname $0)
+
+DEB_DIR=$(mktemp -d)
+DEB_PACKAGES=$(cat deb_packages.txt)
+
+pushd ${DEB_DIR} > /dev/null
+for url in ${DEB_PACKAGES[@]}; do
+    curl -sSL -O ${url}
+done
+popd > /dev/null
+
+apt-get install -qqf ${DEB_DIR}/*.deb
+rm -fr ${DEB_DIR}

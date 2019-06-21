@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [[ $(id -u) != 0 ]]; then
+    echo Operation not permitted >&2
+    exit 1
+fi
+
+cd $(dirname $0)
+
+APT_PACKAGES=$(cat apt_packages.txt)
+
+apt-get install -qq ${APT_PACKAGES}
