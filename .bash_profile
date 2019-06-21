@@ -2,6 +2,9 @@ test -f ~/.bashrc && . ~/.bashrc
 
 [[ -d $HOME/.bin ]] && export PATH="$PATH:$HOME/.bin"
 
+# brew
+test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
 # ruby
 if [ -d $HOME/.rbenv ]; then
     export PATH="$HOME/.rbenv/bin:$PATH"
