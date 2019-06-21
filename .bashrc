@@ -39,6 +39,10 @@ man() {
 	man "$@"
 }
 
+# ref: https://github.com/scop/bash-completion#installation
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
 if hash aws_completer 2> /dev/null; then
     complete -C aws_completer aws
 fi
