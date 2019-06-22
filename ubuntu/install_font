@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -e
+
+TMPDIR=$(mktemp -d)
+pushd ${TMPDIR} > /dev/null
+
+# install Inconsolata
+curl -sSL -o Inconsolata.zip https://fonts.google.com/download?family=Inconsolata
+unzip Inconsolata.zip
+mkdir -p ~/.fonts
+mv Inconsolata-Bold.ttf Inconsolata-Regular.ttf ~/.fonts
+
+# install Ricty
+curl -sSLO https://www.rs.tus.ac.jp/yyusa/ricty/ricty_generator.sh
+bash ricty_generator.sh auto
+mv *.ttf ~/.fonts
+
+popd > /dev/null
+rm -fr ${TMPDIR}

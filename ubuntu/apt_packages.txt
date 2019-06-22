@@ -10,3 +10,5 @@ mysql-client
 python3-pip
 xsel
 pinta
+fontforge
+fonts-migmix
