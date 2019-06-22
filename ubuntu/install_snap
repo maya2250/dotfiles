@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [[ $(id -u) != 0 ]]; then
+    echo Operation not permitted >&2
+    exit 1
+fi
+
+cd $(dirname $0) > /dev/null
+
+while read line; do
+    snap install ${line}
+done < snap_package.txt

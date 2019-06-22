@@ -1,0 +1,3 @@
+docker
+emacs --classic
+libreoffice
