@@ -210,6 +210,8 @@
 
 (use-package slim-mode)
 
+(use-package nginx-mode)
+
 (use-package org
   :custom
   (system-time-locale "C")
