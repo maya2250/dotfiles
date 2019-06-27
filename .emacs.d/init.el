@@ -213,6 +213,8 @@
 (use-package nginx-mode)
 
 (use-package org
+  :config
+  (use-package ox-md)
   :custom
   (system-time-locale "C")
   (org-clock-clocktable-default-properties '(:maxlevel 3))
