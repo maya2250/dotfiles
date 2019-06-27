@@ -14,3 +14,6 @@ Exec=/usr/bin/xmodmap .xmodmaprc
 X-GNOME-Autostart-enabled=true
 Type=Application
 EOF
+
+# https://github.com/tmux-plugins/tpm#installation
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
