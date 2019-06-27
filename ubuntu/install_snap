@@ -10,3 +10,9 @@ cd $(dirname $0) > /dev/null
 while read line; do
     snap install ${line}
 done < snap_package.txt
+
+# https://docs.docker.com/install/linux/linux-postinstall/
+if ! grep --quiet docker /etc/group; then
+    groupadd docker
+    usermod -aG docker $(logname)
+fi
