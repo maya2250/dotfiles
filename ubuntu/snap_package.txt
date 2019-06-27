@@ -1,3 +1,4 @@
 docker
 emacs --classic
 libreoffice
+vlc
