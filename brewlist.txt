@@ -7,3 +7,4 @@ pipenv
 rbenv
 tmux
 vim
+cquery
