@@ -15,3 +15,4 @@ fonts-migmix
 python-virtualenv
 python3-venv
 net-tools
+vim
