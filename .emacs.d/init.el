@@ -270,8 +270,7 @@
   (neo-theme 'ascii))
 
 (use-package highlight-indent-guides
-  :hook ((prog-mode . highlight-indent-guides-mode)
-         (yaml-mode . highlight-indent-guides-mode))
+  :hook (yaml-mode . highlight-indent-guides-mode)
   :custom (highlight-indent-guides-method 'column)
   :diminish 'highlight-indent-guides-mode)
 
