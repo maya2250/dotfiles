@@ -79,6 +79,9 @@
 (global-set-key (kbd "C-c <up>")    'windmove-up)
 (global-set-key (kbd "C-c <down>")  'windmove-down)
 
+;; fix slow next-line ref: https://emacs.stackexchange.com/questions/28736/emacs-pointcursor-movement-lag
+(setq auto-window-vscroll nil)
+
 ;; packages
 (eval-when-compile
   (require 'use-package))
