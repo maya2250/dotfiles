@@ -8,3 +8,4 @@ rbenv
 tmux
 vim
 cquery
+shellcheck
