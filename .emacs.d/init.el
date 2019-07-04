@@ -84,11 +84,11 @@
   (require 'use-package))
 
 (use-package yasnippet
-  :init (yas-global-mode t)
+  :config (yas-global-mode t)
   :diminish 'yas-minor-mode)
 
 (use-package hiwin
-  :init
+  :config
   (hiwin-activate)
   (set-face-background 'hiwin-face "gray32"))
 
@@ -111,7 +111,7 @@
   (push 'company-lsp company-backends))
 
 (use-package company
-  :init
+  :config
   (add-hook 'after-init-hook 'global-company-mode)
   :diminish 'company-mode)
 
@@ -128,11 +128,11 @@
   (add-hook 'python-mode-hook 'config/enable-company-jedi))
 
 (use-package pyvenv
-  :init
+  :config
   (pyvenv-activate my/default_venv_directory))
 
 (use-package ido
-  :init
+  :config
   (ido-mode t)
   (ido-everywhere t)
   (ido-vertical-mode t)
@@ -147,7 +147,7 @@
   ("M-x" . smex)
   ("M-X" . smex-major-mode-commands)
   ("C-c C-c M-x" . execute-extended-command)
-  :init
+  :config
   (smex-initialize)
   (defun smex-prepare-ido-bindings ()
     (define-key ido-completion-map (kbd "C-h") 'delete-backward-char)))
@@ -156,12 +156,12 @@
   :bind
   ("C-c n" . flycheck-next-error)
   ("C-c p" . flycheck-previous-error)
-  :init
+  :config
   (global-flycheck-mode)
   (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc)))
 
 (use-package mozc
-  :init
+  :config
   (setq default-input-method "japanese-mozc")
   (setq mozc-candidate-style 'echo-area))
 
@@ -170,17 +170,17 @@
   :commands (markdown-mode gfm-mode)
   :mode (("README\\.md\\'" . gfm-mode)
          ("\\.md\\'" . markdown-mode))
-  :init (setq markdown-command "multimarkdown"))
+  :config (setq markdown-command "multimarkdown"))
 
 (use-package gitignore-mode
   :mode ("\\.dockerignore\\'" . gitignore-mode)
-  :init
+  :config
   (defun my/gitignore-mode-hook ()
     (setq require-final-newline t))
   (add-hook 'gitignore-mode-hook 'my/gitignore-mode-hook))
 
 (use-package powerline
-  :init
+  :config
   (powerline-default-theme)
   (set-face-attribute 'mode-line nil
                       :background "DarkOrange")
