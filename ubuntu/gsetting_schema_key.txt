@@ -1,0 +1,49 @@
+# key repeat
+org.gnome.desktop.peripherals.keyboard repeat-interval 12
+org.gnome.desktop.peripherals.keyboard delay 181
+
+org.gnome.desktop.input-sources xkb-options ['ctrl:nocaps']  # CapsLock to Ctrl
+org.gnome.desktop.interface gtk-key-theme Emacs  # use Emacs keybinding
+
+org.gnome.desktop.wm.keybindings switch-applications ['<Alt>Tab']
+org.gnome.desktop.wm.keybindings switch-group ['<Alt>grave']
+org.gnome.desktop.wm.keybindings switch-group-backward ['<Shift><Alt>grave']
+org.gnome.desktop.wm.keybindings switch-windows []
+org.gnome.desktop.wm.keybindings switch-windows-backward []
+
+org.gnome.shell favorite-apps []  # all delete dock application
+
+org.gnome.shell.extensions.dash-to-dock dock-fixed false  # automatically hide dock
+org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 44  # dock size
+
+org.gnome.desktop.session idle-delay 0  # blank screen time
+
+org.gnome.settings-daemon.plugins.power idle-dim false  # org.gnome.desktop.screensaver lock-delay 0
+org.gnome.settings-daemon.plugins.power power-button-action 'suspend'  # power button action
+
+org.gnome.desktop.interface enable-animations false  # disable animation
+
+# hide desktop icons
+org.gnome.shell.extensions.desktop-icons show-home false
+org.gnome.shell.extensions.desktop-icons show-trash false
+
+org.gnome.desktop.interface show-battery-percentage true  # show battery percentage
+
+org.gnome.desktop.notifications show-banners false  # notification popup
+org.gnome.desktop.notifications show-in-lock-screen false  # notification in lock-screen
+
+org.gnome.desktop.datetime automatic-timezone true  # set timezone automatically
+
+org.gnome.mutter edge-tiling false  # expand window when move window to edge
+
+org.gnome.desktop.wm.preferences focus-mode 'sloppy'  # focus window setting
+
+org.gnome.desktop.input-sources mru-sources [('ibus','mozc-jp'),('xkb','us')]
+
+org.gnome.desktop.peripherals.touchpad speed 0.56204379562043805  # touchpad speed
+
+# clock format
+org.gnome.desktop.interface clock-format '24h'
+org.gnome.desktop.interface clock-show-weekday true
+org.gnome.desktop.interface clock-show-date true
+org.gnome.desktop.interface clock-show-seconds true
