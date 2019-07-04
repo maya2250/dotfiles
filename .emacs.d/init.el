@@ -83,6 +83,9 @@
 (eval-when-compile
   (require 'use-package))
 
+(require 'use-package-ensure)
+(setq use-package-always-ensure t)
+
 (use-package yasnippet
   :config (yas-global-mode t)
   :diminish 'yas-minor-mode)
@@ -166,7 +169,6 @@
   (setq mozc-candidate-style 'echo-area))
 
 (use-package markdown-mode
-  :ensure t
   :commands (markdown-mode gfm-mode)
   :mode (("README\\.md\\'" . gfm-mode)
          ("\\.md\\'" . markdown-mode))
@@ -213,16 +215,17 @@
 (use-package nginx-mode)
 
 (use-package org
-  :config
-  (use-package ox-md)
   :custom
   (system-time-locale "C")
   (org-clock-clocktable-default-properties '(:maxlevel 3))
   (org-adapt-indentation nil)
   (org-edit-src-content-indentation 0))
 
+(use-package ox-md
+  :ensure nil
+  :after org)
+
 (use-package editorconfig
-  :ensure t
   :config
   (editorconfig-mode 1)
   :diminish editorconfig-mode)
