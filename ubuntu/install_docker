@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [[ $(id -u) != 0 ]]; then
+    echo Operation not permitted >&2
+    exit 1
+fi
+
+BUILD_DEPENDENCIES=(apt-transport-https ca-certificates curl gnupg-agent software-properties-common)
+
+apt-get -qq update
+apt-get -qq install "${BUILD_DEPENDENCIES[@]}"
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   cosmic \
+   stable"
+
+apt-get -qq update
+apt-get -qq install docker-ce docker-ce-cli containerd.io
+DOCKER_VERSION=$(apt-cache madison docker-ce | head -1 | cut -d'|' -f2 | tr -d '[:space:]')
+apt-get -qq install docker-ce="${DOCKER_VERSION}" docker-ce-cli="${DOCKER_VERSION}" containerd.io
+
+# docker-compose
+curl -fsSL "https://github.com/docker/compose/releases/download/1.24.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
+# https://docs.docker.com/install/linux/linux-postinstall/
+if ! grep --quiet docker /etc/group; then
+    groupadd docker
+    usermod -aG docker "$(logname)"
+fi
