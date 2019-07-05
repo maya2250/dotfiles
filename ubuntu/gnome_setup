@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-
-cd $(dirname $0)
-sed -e 's/#.*//' -e '/^$/d' gsetting_schema_key.txt | while read schema_key; do
-    gsettings set ${schema_key}
-done
