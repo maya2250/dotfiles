@@ -217,6 +217,9 @@
 
 (use-package nginx-mode)
 
+(use-package vimrc-mode
+  :mode "\\.vim\\(rc\\)?\\'")
+
 (use-package org
   :custom
   (system-time-locale "C")
