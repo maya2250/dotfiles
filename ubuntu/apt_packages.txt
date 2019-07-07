@@ -18,3 +18,4 @@ net-tools
 vim
 vagrant
 virtualbox
+fonts-noto-color-emoji
