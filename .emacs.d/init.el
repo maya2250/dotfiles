@@ -197,6 +197,9 @@
 (use-package typescript-mode
   :mode "\\.ts?x\\'")
 
+(use-package js2-mode
+  :mode "\\.js\\'")
+
 (use-package rjsx-mode
   :mode ("components\\/.*\\.js\\'" . rjsx-mode))
 
