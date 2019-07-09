@@ -197,6 +197,9 @@
 (use-package typescript-mode
   :mode "\\.ts?x\\'")
 
+(use-package add-node-modules-path
+  :hook (js-mode js2-mode))
+
 (use-package js2-mode
   :mode "\\.js\\'")
 
