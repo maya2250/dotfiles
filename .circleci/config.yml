@@ -7,6 +7,7 @@ jobs:
     working_directory: ~/project
     steps:
       - checkout
+      - run: sudo apt-get update -qq
       - run: ./install
       - run: ./install_brew
       - run: sudo -E ./ubuntu/install_deb_packages
