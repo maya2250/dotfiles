@@ -23,3 +23,5 @@ if hash go 2> /dev/null; then
   export GOPATH=~/.go
   export PATH=`go env GOPATH`/bin:$PATH
 fi
+
+export LC_TIME=C
