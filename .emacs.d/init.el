@@ -162,9 +162,27 @@
   :bind
   ("C-c n" . flycheck-next-error)
   ("C-c p" . flycheck-previous-error)
+  :magic (("^AWSTemplateFormatVersion" . cfn-mode)
+          ("^Transform" . cfn-mode))
   :config
   (global-flycheck-mode)
-  (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc)))
+  (setq-default flycheck-disabled-checkers '(emacs-lisp-checkdoc))
+  (define-derived-mode cfn-mode yaml-mode
+    "cfn"
+    "Cloudformation template mode.")
+  (flycheck-define-checker cfn-lint
+    "A Cloudformation linter using cfn-python-lint.
+    See URL 'https://github.com/awslabs/cfn-python-lint'."
+    :command ("cfn-lint" "-f" "parseable" source)
+    :error-patterns
+    ((warning line-start (file-name) ":" line ":" column
+              ":" (one-or-more digit) ":" (one-or-more digit) ":"
+              (id "W" (one-or-more digit)) ":" (message) line-end)
+     (error line-start (file-name) ":" line ":" column
+            ":" (one-or-more digit) ":" (one-or-more digit) ":"
+            (id "E" (one-or-more digit)) ":" (message) line-end))
+    :modes (cfn-mode))
+  (add-to-list 'flycheck-checkers 'cfn-lint))
 
 (use-package mozc
   :config
