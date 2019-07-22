@@ -69,6 +69,8 @@
 
 (desktop-save-mode 1)
 
+(setq confirm-kill-emacs 'yes-or-no-p)
+
 ;; keymap
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "C-?") 'help)
