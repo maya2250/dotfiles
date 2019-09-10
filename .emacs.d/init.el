@@ -121,6 +121,8 @@
 (use-package company
   :config
   (add-hook 'after-init-hook 'global-company-mode)
+  :custom
+  (company-dabbrev-downcase nil)
   :diminish 'company-mode)
 
 (defvar my/default_venv_directory "~/.emacs.d/.python-environments/default")
