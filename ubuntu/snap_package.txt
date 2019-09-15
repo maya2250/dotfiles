@@ -1,3 +1,4 @@
 emacs --classic
 libreoffice
 vlc
+kubectl --classic
