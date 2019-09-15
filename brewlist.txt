@@ -9,3 +9,4 @@ tmux
 vim
 cquery
 shellcheck
+prettier
