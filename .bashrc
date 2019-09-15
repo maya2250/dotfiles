@@ -70,8 +70,16 @@ function parse_git_branch() {
     fi
 }
 
+function exit_status() {
+    if [[ "$?" -eq 0 ]]; then
+        echo "${WHITE}›${COLOREND}"
+    else
+        echo "$? ${RED}›${COLOREND}"
+    fi
+}
+
 function promps() {
-    tail="${WHITE}›${COLOREND}"
+    tail="${WHITE}$(exit_status)${COLOREND}"
     PS1="${YELLOW}\w${COLOREND}$(parse_git_branch) ${tail} "
 }
 
