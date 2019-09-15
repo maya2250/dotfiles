@@ -49,24 +49,19 @@ fi
 
 # color
 COLOREND="\[\e[00m\]"
-BLACK="\[\e[0;30m\]"
 RED="\[\e[0;31m\]"
 GREEN="\[\e[0;32m\]"
 YELLOW="\[\e[0;33m\]"
-BLUE="\[\e[0;34m\]"
-PURPLE="\[\e[0;35m\]"
-CYAN="\[\e[0;36m\]"
 WHITE="\[\e[0;37m\]"
 
-# get current branch
 function parse_git_branch() {
-    branch="$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ [\1]/')"
-    if [[ $branch != "" ]]; then
-        if [[ $(git status 2> /dev/null | tail -n1) == "nothing to commit, working tree clean" ]]; then
-            echo "${GREEN}$branch${COLOREND}"
-        else
-            echo "${RED}$branch${COLOREND}"
-        fi
+    branch="$(git rev-parse --abbrev-ref HEAD 2> /dev/null)"
+    test "${branch}" == "" && return 0
+
+    if [[ -z "$(git status --short)" ]]; then
+        echo "${GREEN} [${branch}]${COLOREND}"
+    else
+        echo "${RED} [${branch}]${COLOREND}"
     fi
 }
 
