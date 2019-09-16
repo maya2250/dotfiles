@@ -223,7 +223,8 @@
   :hook (js-mode js2-mode))
 
 (use-package js2-mode
-  :mode "\\.js\\'")
+  :mode "\\.js\\'"
+  :custom (js2-mode-show-strict-warnings nil))
 
 (use-package rjsx-mode
   :mode ("components\\/.*\\.js\\'" . rjsx-mode))
