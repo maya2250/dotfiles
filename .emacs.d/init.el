@@ -313,3 +313,6 @@
   :diminish 'undo-tree-mode)
 
 (use-package fish-mode)
+
+(use-package prettier-js
+  :hook (js2-mode . prettier-js-mode))
