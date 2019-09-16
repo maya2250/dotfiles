@@ -116,13 +116,16 @@
 
 (use-package company-lsp
   :config
-  (push 'company-lsp company-backends))
+  (push 'company-lsp company-backends)
+  :custom
+  (company-lsp-cache-candidates t))
 
 (use-package company
   :config
   (add-hook 'after-init-hook 'global-company-mode)
   :custom
   (company-dabbrev-downcase nil)
+  (company-idle-delay 0)
   :diminish 'company-mode)
 
 (defvar my/default_venv_directory "~/.emacs.d/.python-environments/default")
