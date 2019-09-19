@@ -50,6 +50,7 @@ generate_snippet() {
 # name: $1
 # key: $2
 # group: cloudformation
+# expand-env: ((yas-indent-line 'fixed))
 # --
   \${1:Resource Name}:
 $3
