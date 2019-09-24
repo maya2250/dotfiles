@@ -318,4 +318,4 @@
 (use-package fish-mode)
 
 (use-package prettier-js
-  :hook (js2-mode . prettier-js-mode))
+  :hook ((js2-mode css-mode scss-mode) . prettier-js-mode))
