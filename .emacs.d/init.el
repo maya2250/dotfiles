@@ -101,6 +101,8 @@
   (set-face-background 'hiwin-face "gray32"))
 
 (use-package lsp-mode
+  :custom
+  (lsp-auto-guess-root t)
   :config
   (add-hook 'prog-mode-hook #'lsp))
 
