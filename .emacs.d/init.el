@@ -103,6 +103,7 @@
 (use-package lsp-mode
   :custom
   (lsp-auto-guess-root t)
+  (lsp-restart 'ignore)
   :config
   (add-hook 'prog-mode-hook #'lsp))
 
