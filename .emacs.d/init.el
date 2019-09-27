@@ -266,6 +266,8 @@
   :ensure nil
   :after org)
 
+(use-package terraform-mode)
+
 (use-package editorconfig
   :config
   (editorconfig-mode 1)
