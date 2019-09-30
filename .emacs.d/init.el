@@ -266,7 +266,9 @@
   :ensure nil
   :after org)
 
-(use-package terraform-mode)
+(use-package terraform-mode
+  :hook
+  (terraform-mode . terraform-format-on-save-mode))
 
 (use-package editorconfig
   :config
