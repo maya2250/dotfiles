@@ -1,0 +1,51 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"HideIcons"=dword:00000001
+"ShowTaskViewButton"=dword:00000000
+"ShowCortanaButton"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband]
+"Favorites"=hex:FF
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"SearchboxTaskbarMode"=dword:00000000
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel]
+"{20D04FE0-3AEA-1069-A2D8-08002B30309D}"=dword:00000001
+"{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}"=dword:00000001
+"{59031a47-3f72-44a7-89c5-5595fe6b30ee}"=dword:00000001
+"{645FF040-5081-101B-9F08-00AA002F954E}"=dword:00000001
+"{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+"EnableAutoTray"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\Software\Realtek\SmartAmpCMD]
+"UNMUTE"=dword:00000000
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\StickyKeys]
+"Flags"="506"
+
+[HKEY_CURRENT_USER\Control Panel\Accessibility\Keyboard Response]
+"AutoRepeatDelay"="150"
+"AutoRepeatRate"="6"
+"BounceTime"="0"
+"DelayBeforeAcceptance"="0"
+"Flags"="27"
+
+[HKEY_CURRENT_USER\Control Panel\Keyboard]
+"InitialKeyboardIndicators"="0"
+"KeyboardDelay"="1"
+"KeyboardSpeed"="500"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000001
+"HideFileExt"=dword:00000000
+"ShowSuperHidden"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLUA"=dword:00000000

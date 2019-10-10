@@ -1,0 +1,5 @@
+DavidWang.ini-for-vscode
+esbenp.prettier-vscode
+ionutvmi.reg
+lfs.vscode-emacs-friendly
+ms-vscode.powershell

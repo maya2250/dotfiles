@@ -1,0 +1,12 @@
+googlechrome
+vscode
+bind-toolsonly
+emacs
+docker-desktop
+kubernetes-cli
+minikube
+conemu
+virtualbox
+vagrant
+cygwin
+steam
