@@ -20,3 +20,4 @@ vagrant
 virtualbox
 fonts-noto-color-emoji
 fish
+fonts-ricty-diminished

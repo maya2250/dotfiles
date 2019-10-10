@@ -14,4 +14,3 @@ jobs:
       - run: sudo -E ./ubuntu/install_apt_packages
       - run: sudo -E ./ubuntu/install_powerline
       - run: sudo -E ./ubuntu/install_docker
-      - run: ./ubuntu/install_font
