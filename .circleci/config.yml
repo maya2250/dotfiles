@@ -10,7 +10,7 @@ jobs:
       - run: sudo apt-get update -qq
       - run: ./install
       - run: ./install_brew
-      - run: sudo -E ./ubuntu/install_deb_packages
-      - run: sudo -E ./ubuntu/install_apt_packages
-      - run: sudo -E ./ubuntu/install_powerline
-      - run: sudo -E ./ubuntu/install_docker
+      - run: ./ubuntu/install_deb_packages
+      - run: ./ubuntu/install_apt_packages
+      - run: ./ubuntu/install_powerline
+      - run: ./ubuntu/install_docker

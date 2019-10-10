@@ -2,10 +2,7 @@
 
 set -e
 
-if [[ $(id -u) != 0 ]]; then
-    echo Operation not permitted >&2
-    exit 1
-fi
+[[ $(id -u) -eq 0 ]] || exec sudo -E "$0"
 
 cd $(dirname $0)
 
