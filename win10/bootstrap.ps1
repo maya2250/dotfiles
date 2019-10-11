@@ -5,6 +5,8 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 
 if (-Not (Get-Command git -ErrorAction SilentlyContinue)) {
     choco install -y git
+    $Env:ChocolateyInstall = Convert-Path "$((Get-Command choco).path)\..\.."
+    Import-Module "$Env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
     refreshenv
 }
 
@@ -15,6 +17,8 @@ if (-Not (git rev-parse --git-dir 2>&1 | Out-Null)) {
 }
 
 choco install -y (Get-content -Path .\choco_packages.txt)
+$Env:ChocolateyInstall = Convert-Path "$((Get-Command choco).path)\..\.."
+Import-Module "$Env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 refreshenv
 
 ForEach ($extension in (Get-Content -Path ..\vscode\extensions.txt)) {
