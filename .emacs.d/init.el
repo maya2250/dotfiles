@@ -255,6 +255,10 @@
 (use-package vimrc-mode
   :mode "\\.vim\\(rc\\)?\\'")
 
+(use-package fish-mode)
+
+(use-package powershell)
+
 (use-package org
   :custom
   (system-time-locale "C")
@@ -321,8 +325,6 @@
   (global-undo-tree-mode)
   (unbind-key "C-?" undo-tree-map)
   :diminish 'undo-tree-mode)
-
-(use-package fish-mode)
 
 (use-package prettier-js
   :hook ((js2-mode css-mode scss-mode) . prettier-js-mode))
