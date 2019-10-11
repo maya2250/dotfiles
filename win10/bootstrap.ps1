@@ -27,5 +27,5 @@ ForEach ($extension in (Get-Content -Path ..\vscode\extensions.txt)) {
 New-Item -Force -ItemType SymbolicLink -Path $Env:APPDATA\Code\User\settings.json -Target ..\vscode\settings.json
 
 New-Item -Force -ItemType SymbolicLink -Path $profile -Target .\profile.ps1
-
+New-Item -Force -ItemType SymbolicLink -Path $Env:APPDATA\ConEmu.xml -Target .\ConEmu.xml
 reg import .\my.reg
