@@ -1,4 +1,4 @@
-Set-Location $PSScriptRoot
+Push-Location $PSScriptRoot
 
 Set-ExecutionPolicy Bypass -Scope Process -Force
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -29,3 +29,5 @@ New-Item -Force -ItemType SymbolicLink -Path $Env:APPDATA\Code\User\settings.jso
 New-Item -Force -ItemType SymbolicLink -Path $profile -Target .\profile.ps1
 New-Item -Force -ItemType SymbolicLink -Path $Env:APPDATA\ConEmu.xml -Target .\ConEmu.xml
 reg import .\my.reg
+
+Pop-Location
