@@ -16,7 +16,7 @@ if (-Not (git rev-parse --git-dir 2>&1 | Out-Null)) {
     git remote set-url origin git@github.com:maya2250/dotfiles.git
 }
 
-choco install -y (Get-content -Path .\choco_packages.txt)
+choco install --yes --no-progress (Get-content -Path .\choco_packages.txt)
 $Env:ChocolateyInstall = Convert-Path "$((Get-Command choco).path)\..\.."
 Import-Module "$Env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 refreshenv
