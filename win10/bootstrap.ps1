@@ -10,7 +10,7 @@ if (-Not (Get-Command git -ErrorAction SilentlyContinue)) {
     refreshenv
 }
 
-if (-Not (git rev-parse --git-dir 2>&1 | Out-Null)) {
+if (-Not (git rev-parse --git-dir 2> $NULL)) {
     git clone https://github.com/maya2250/dotfiles $Env:HOMEPATH\.dotfiles
     Set-Location $Env:HOMEPATH\.dotfiles\win10
     git remote set-url origin git@github.com:maya2250/dotfiles.git
