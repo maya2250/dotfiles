@@ -5,7 +5,8 @@ DOT_FILES=$(ls -ad .?*)
 
 for file in ${DOT_FILES}; do
     if [ ${file} = '.git' ] || [ ${file} = '.gitignore' ] || \
-           [ ${file} = '..' ] || [ ${file} = '.circleci' ]; then
+           [ ${file} = '..' ] || [ ${file} = '.circleci' ] || \
+           [ ${file} = '.appveyor.yml' ]; then
         continue
     fi
 
