@@ -1,4 +1,5 @@
 [![CircleCI](https://circleci.com/gh/maya2250/dotfiles/tree/master.svg?style=shield&circle-token=83a04a3161bc137bee356c036a74b8fa43dfd195)](https://circleci.com/gh/maya2250/dotfiles/tree/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/sq6w67adiwu2qs4q/branch/master?svg=true)](https://ci.appveyor.com/project/maya2250/dotfiles/branch/master)
 
 # dotfiles
 
