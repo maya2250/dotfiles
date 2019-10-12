@@ -1,0 +1,11 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+build_script:
+- ps: .\win10\bootstrap.ps1
+notifications:
+- provider: Slack
+  incoming_webhook:
+    secure: TtwtlwvvVDanHxffTAhzhh7ybtn2FGK874v7OK8U3nHHm5IMGzxCuNILeyM535F5+f42RehTEhSKpm9miVsDVbiCHnowF0cjHh27Z3WyIiY=
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: true
