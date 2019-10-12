@@ -1,5 +1,8 @@
 Push-Location $PSScriptRoot
 
+# dummy assignment
+$PROFILE = if (-Not $PROFILE) {"$Env:APPDATA\dummy.ps1)"} else {$PROFILE}
+
 Set-ExecutionPolicy Bypass -Scope Process -Force
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
@@ -26,7 +29,7 @@ ForEach ($extension in (Get-Content -Path ..\vscode\extensions.txt)) {
 }
 New-Item -Force -ItemType SymbolicLink -Path $Env:APPDATA\Code\User\settings.json -Target ..\vscode\settings.json
 
-New-Item -Force -ItemType SymbolicLink -Path $profile -Target .\profile.ps1
+New-Item -Force -ItemType SymbolicLink -Path $PROFILE -Target .\profile.ps1
 New-Item -Force -ItemType SymbolicLink -Path $Env:APPDATA\ConEmu.xml -Target .\ConEmu.xml
 reg import .\my.reg
 
