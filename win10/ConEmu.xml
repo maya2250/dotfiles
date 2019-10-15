@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-10-12 08:06:40" build="190714">
+		<key name=".Vanilla" modified="2019-10-15 15:31:18" build="191012">
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
@@ -41,8 +41,8 @@
 			<value name="FontSize" type="ulong" data="14"/>
 			<value name="StatusFontHeight" type="long" data="12"/>
 			<value name="TabFontHeight" type="long" data="13"/>
-			<key name="HotKeys" modified="2019-10-12 08:06:25" build="190714">
-				<value name="MinimizeRestore" type="dword" data="8080807b"/>
+			<key name="HotKeys" modified="2019-10-15 15:31:18" build="191012">
+				<value name="MinimizeRestore" type="dword" data="0000127b"/>
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="000000a2"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -340,7 +340,7 @@
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="00000520"/>
 			<value name="ConWnd X" type="long" data="-1"/>
-			<value name="ConWnd Y" type="long" data="21"/>
+			<value name="ConWnd Y" type="long" data="49"/>
 			<value name="LastMonitor" type="string" data="0,0,1920,1040"/>
 			<value name="ConWnd Width" type="dword" data="00000050"/>
 			<value name="ConWnd Height" type="dword" data="00000019"/>
@@ -698,6 +698,7 @@
 			<key name="Colors" modified="2019-10-12 08:06:25" build="190714">
 				<value name="Count" type="long" data="0"/>
 			</key>
+			<value name="StatusBar.Hide.InputGrouping" type="hex" data="00"/>
 		</key>
 	</key>
 </key>
