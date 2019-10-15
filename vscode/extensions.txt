@@ -2,4 +2,5 @@ DavidWang.ini-for-vscode
 esbenp.prettier-vscode
 ionutvmi.reg
 lfs.vscode-emacs-friendly
+ms-azuretools.vscode-docker
 ms-vscode.powershell
