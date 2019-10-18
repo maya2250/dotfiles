@@ -11,3 +11,5 @@ vagrant
 cygwin
 steam
 vcredist2012
+yarn
+nodejs-lts
