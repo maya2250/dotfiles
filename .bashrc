@@ -46,6 +46,8 @@ man() {
 hash aws_completer 2> /dev/null && complete -C aws_completer aws
 hash terraform 2> /dev/null && complete -C terraform terraform
 
+[[ -f /usr/share/sounds/GNUstep/Tink.wav ]] && notify() { paplay /usr/share/sounds/GNUstep/Tink.wav; }
+
 # color
 COLOREND="\[\e[00m\]"
 RED="\[\e[0;31m\]"
