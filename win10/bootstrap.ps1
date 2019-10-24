@@ -1,7 +1,7 @@
 Push-Location $PSScriptRoot
 
 # dummy assignment
-$PROFILE = if (-Not $PROFILE) {"$Env:APPDATA\dummy.ps1)"} else {$PROFILE}
+$PROFILE = if (-Not $PROFILE) { "$Env:APPDATA\dummy.ps1)" } else { $PROFILE }
 
 Set-ExecutionPolicy Bypass -Scope Process -Force
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -23,6 +23,11 @@ choco install --yes --no-progress (Get-content -Path .\choco_packages.txt)
 $Env:ChocolateyInstall = Convert-Path "$((Get-Command choco).path)\..\.."
 Import-Module "$Env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 refreshenv
+
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1804 -OutFile ~\Downloads\Ubuntu.appx -UseBasicParsing
+Add-AppxPackage .\Downloads\Ubuntu.appx
 
 ForEach ($extension in (Get-Content -Path ..\vscode\extensions.txt)) {
     code --install-extension $extension --force
