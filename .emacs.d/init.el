@@ -45,8 +45,8 @@
 (add-to-list 'default-frame-alist '(cursor-color . "#ff9200"))
 
 ;; font
-(when (member "Ricty Diminished" (font-family-list))
-  (add-to-list 'default-frame-alist '(font . "Ricty Diminished 11")))
+(when (member "Liberation Mono" (font-family-list))
+  (add-to-list 'default-frame-alist '(font . "Liberation Mono 10")))
 
 (setq-default line-spacing 3)
 
