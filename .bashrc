@@ -22,6 +22,7 @@ esac
 alias be="bundle exec"
 alias g="git"
 alias globalip="curl inet-ip.info"
+alias grep="grep --color"
 
 function path { echo $PATH | tr : '\n'; }
 
