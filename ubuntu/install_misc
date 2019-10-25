@@ -14,3 +14,7 @@ Exec=/usr/bin/xmodmap .xmodmaprc
 X-GNOME-Autostart-enabled=true
 Type=Application
 EOF
+
+if [ -d /usr/share/gnome-shell/extensions/desktop-icons@csoriano/ ]; then
+    sudo rm -rf /usr/share/gnome-shell/extensions/desktop-icons@csoriano
+fi
