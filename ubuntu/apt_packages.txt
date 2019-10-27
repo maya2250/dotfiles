@@ -21,3 +21,4 @@ virtualbox
 fonts-noto-color-emoji
 fish
 graphviz
+default-jre
