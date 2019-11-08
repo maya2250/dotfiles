@@ -48,7 +48,7 @@
 (when (member "Liberation Mono" (font-family-list))
   (add-to-list 'default-frame-alist '(font . "Liberation Mono 10")))
 
-(setq-default line-spacing 3)
+(setq-default line-spacing 1)
 
 ;; show useless whitespace at the end of a line
 (defun my/show-trailing-whitespace-hook ()
