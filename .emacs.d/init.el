@@ -62,7 +62,6 @@
 (setq create-lockfiles nil)  ;; disable to create .#lock files
 
 (global-auto-revert-mode 1)
-(set-frame-parameter nil 'fullscreen 'maximized)
 (setq ring-bell-function 'ignore)
 
 (setq-default indent-tabs-mode nil)
