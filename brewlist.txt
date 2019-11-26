@@ -11,3 +11,4 @@ cquery
 shellcheck
 prettier
 php@7.2
+tfenv
