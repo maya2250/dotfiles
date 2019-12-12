@@ -24,3 +24,4 @@ graphviz
 default-jre
 ansible
 imagemagick
+htop
