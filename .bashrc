@@ -47,6 +47,11 @@ man() {
 hash aws_completer 2> /dev/null && complete -C aws_completer aws
 hash terraform 2> /dev/null && complete -C terraform terraform
 
+if [ -f /usr/share/bash-completion/completions/git ]; then
+    . /usr/share/bash-completion/completions/git
+    __git_complete g __git_main
+fi
+
 [[ -f /usr/share/sounds/GNUstep/Tink.wav ]] && notify() { paplay /usr/share/sounds/GNUstep/Tink.wav; }
 
 # color
