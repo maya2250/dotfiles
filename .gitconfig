@@ -8,7 +8,7 @@
 [alias]
 	alias = config --get-regexp \"alias.*\"
 	# graph
-	g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %<(70,trunc)%s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	lp = log -p
 	ls = log --stat
 	s = status
