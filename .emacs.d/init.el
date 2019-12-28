@@ -55,6 +55,9 @@
   (setq show-trailing-whitespace t))
 (add-hook 'prog-mode-hook 'my/show-trailing-whitespace-hook)
 
+(defun my/delete-trailing-whitespace-hook ()
+  (add-to-list 'write-file-functions 'delete-trailing-whitespace))
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (setq make-backup-files nil)  ;; disable to create backup~ files
@@ -219,7 +222,8 @@
   (setq powerline-default-separator 'box))
 
 (use-package yaml-mode
-  :mode ("\\.ya?ml\\'" . yaml-mode))
+  :mode ("\\.ya?ml\\'" . yaml-mode)
+  :hook (yaml-mode . my/delete-trailing-whitespace-hook))
 
 (use-package typescript-mode
   :mode "\\.ts?x\\'")
