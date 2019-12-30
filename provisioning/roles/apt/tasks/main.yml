@@ -1,0 +1,45 @@
+---
+- name: Install apt packages
+  apt:
+    name:
+    - emacs-mozc-bin
+    - cmus
+    - guake
+    - arp-scan
+    - dconf-cli
+    - dconf-editor
+    - tree
+    - gnome-tweaks
+    - mysql-client
+    - python3-pip
+    - xsel
+    - pinta
+    - fontforge
+    - fonts-migmix
+    - python-virtualenv
+    - python3-venv
+    - net-tools
+    - vim
+    - vagrant
+    - virtualbox
+    - fonts-noto-color-emoji
+    - fish
+    - graphviz
+    - default-jre
+    - ansible
+    - imagemagick
+    - htop
+    - vlc
+    - libreoffice
+    - emacs
+    force_apt_get: yes
+
+- name: Install deb packages
+  apt:
+    deb: "{{ item }}"
+    force_apt_get: yes
+  with_items:
+    - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
+    - https://zoom.us/client/latest/zoom_amd64.deb
+    - https://go.microsoft.com/fwlink/?LinkID=760868

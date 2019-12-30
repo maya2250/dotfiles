@@ -4,3 +4,5 @@
     - dotfiles
     - role: keyboard
       become: yes
+    - role: apt
+      become: yes
