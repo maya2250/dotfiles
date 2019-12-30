@@ -1,0 +1,22 @@
+---
+- name: Get dotfiles root directory
+  shell: git rev-parse --show-toplevel
+  register: dotfiles_root_directory
+
+- name: Create dotfiles symlink
+  file:
+    path: "~/{{ item }}"
+    src: "{{ dotfiles_root_directory.stdout }}/{{ item }}"
+    state: link
+    force: yes
+  with_items:
+    - .bashrc
+    - .emacs.d
+    - .gitconfig
+    - .gitignore_global
+    - .profile
+    - .tmux.conf
+    - .tmux.conf.linux
+    - .tmux.conf.macos
+    - .vim
+    - .xmodmaprc
