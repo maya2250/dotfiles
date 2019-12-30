@@ -1,0 +1,6 @@
+---
+- name: CapsLock will act as Ctrl
+  template:
+    src: keyboard.j2
+    dest: /etc/default/keyboard
+  notify: reload
