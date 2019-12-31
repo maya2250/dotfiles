@@ -8,3 +8,4 @@
       become: yes
     - role: docker
       become: yes
+    - linuxbrew

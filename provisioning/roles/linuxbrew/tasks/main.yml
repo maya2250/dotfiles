@@ -1,0 +1,16 @@
+---
+- name: Git clone Homebrew
+  git:
+    repo: https://github.com/Homebrew/brew
+    dest: ~/.linuxbrew/Homebrew
+
+- name: Create ~/.linuxbrew/bin directory
+  file:
+    path: ~/.linuxbrew/bin
+    state: directory
+
+- name: Create Homebrew binary symlink
+  file:
+    src: ~/.linuxbrew/Homebrew/bin/brew
+    dest: ~/.linuxbrew/bin/brew
+    state: link
