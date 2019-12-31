@@ -25,3 +25,6 @@ default-jre
 ansible
 imagemagick
 htop
+vlc
+libreoffice
+emacs

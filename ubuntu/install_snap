@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-[[ $(id -u) -eq 0 ]] || exec sudo -E "$0"
-
-cd $(dirname $0) > /dev/null
-
-while read line; do
-    snap install ${line}
-done < snap_package.txt
