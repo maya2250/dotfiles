@@ -1,0 +1,50 @@
+---
+- name: Install Docker's dependencies
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg-agent
+      - software-properties-common
+    update_cache: yes
+    force_apt_get: yes
+
+- name: Add Docker’s official GPG key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+
+- name: Add Docker's apt repository
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu disco stable
+
+- name: Install Docker Engine - Community and contaninerd
+  apt:
+    name:
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+    update_cache: yes
+    force_apt_get: yes
+
+- name: Create docker group
+  group:
+    name: docker
+
+- name: Add current user to docker group
+  user:
+    name: "{{ ansible_user_id }}"
+    append: yes
+    groups:
+      - docker
+
+- name: Install Docker Compose
+  get_url:
+    url: "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-{{ ansible_system }}-{{ ansible_machine }}"
+    dest: /usr/local/bin/docker-compose
+    mode: +x
+
+- name: Install Docker Compose bash completion
+  get_url:
+    url: https://raw.githubusercontent.com/docker/compose/1.25.0/contrib/completion/bash/docker-compose
+    dest: /etc/bash_completion.d/docker-compose

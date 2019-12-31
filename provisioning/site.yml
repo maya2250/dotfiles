@@ -6,3 +6,5 @@
       become: yes
     - role: apt
       become: yes
+    - role: docker
+      become: yes
