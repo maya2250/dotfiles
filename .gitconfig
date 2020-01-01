@@ -3,6 +3,7 @@
 	path = .gitconfig.user
 [core]
 	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = ~/.gitignore_global
 [color]
 	ui = true
 [alias]
