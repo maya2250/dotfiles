@@ -1,0 +1,10 @@
+---
+- name: Ensure to exist ~/.config/autostart directory
+  file:
+    path: ~/.config/autostart
+    state: directory
+
+- name: Create xmodmap.desktop to autostart xmodmap
+  template:
+    src: xmodmap.desktop
+    dest: ~/.config/autostart/xmodmap.desktop

@@ -10,3 +10,4 @@
       become: yes
     - linuxbrew
     - homebrew_packages
+    - xmodmap
