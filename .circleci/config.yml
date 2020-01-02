@@ -8,9 +8,6 @@ jobs:
     steps:
       - checkout
       - run: sudo apt-get update -qq
-      - run: ./install
-      - run: ./install_brew
-      - run: ./ubuntu/install_deb_packages
-      - run: ./ubuntu/install_apt_packages
-      - run: ./ubuntu/install_powerline
-      - run: ./ubuntu/install_docker
+      - run:
+          command: ansible-playbook provisioning/site.yml
+          no_output_timeout: 1h
