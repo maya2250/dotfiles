@@ -9,3 +9,4 @@
     - role: docker
       become: yes
     - linuxbrew
+    - homebrew_packages

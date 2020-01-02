@@ -1,0 +1,23 @@
+---
+- name: Install Homebrew packages
+  homebrew:
+    name:
+      - awscli
+      - dep
+      - git
+      - go
+      - n
+      - pipenv
+      - rbenv
+      - tmux
+      - vim
+      - cquery
+      - shellcheck
+      - prettier
+      - php@7.2
+      - tfenv
+      - kubectl
+      - direnv
+      - gibo
+  environment:
+    PATH: "{{ ansible_user_dir }}/.linuxbrew/bin:{{ ansible_env.PATH }}"
