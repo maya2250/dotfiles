@@ -1,16 +1,20 @@
 version: 2.1
+commands:
+  build:
+    steps:
+      - checkout
+      - run: bootstrap/deb
+      - run: bootstrap/misc
+      - run: bootstrap/dconf
+      - run: bootstrap/dotfiles_symlink
+      - run: bootstrap/apt
+      - run: bootstrap/docker
+      - run: bootstrap/homebrew
 
 jobs:
   build:
     docker:
       - image: maya2250/dotfiles:ubuntu-19.10
-    working_directory: ~/project
+    working_directory: ~/.dotfiles
     steps:
-      - checkout
-      - run: sudo apt-get update -qq
-      - run: ./install
-      - run: ./install_brew
-      - run: ./ubuntu/install_deb_packages
-      - run: ./ubuntu/install_apt_packages
-      - run: ./ubuntu/install_powerline
-      - run: ./ubuntu/install_docker
+      - build
