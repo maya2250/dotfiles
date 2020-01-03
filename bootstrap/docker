@@ -1,13 +1,11 @@
-#!/usr/bin/env bash
-
-set -e
+#!/bin/bash -e
 
 [[ $(id -u) -eq 0 ]] || exec sudo -E "$0"
 
-BUILD_DEPENDENCIES=(apt-transport-https ca-certificates curl gnupg-agent software-properties-common)
+build_dependencies=(apt-transport-https ca-certificates curl gnupg-agent software-properties-common)
 
 apt-get -qq update
-apt-get -qq install "${BUILD_DEPENDENCIES[@]}"
+apt-get -qq install "${build_dependencies[@]}"
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 add-apt-repository \
