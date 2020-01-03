@@ -1,0 +1,38 @@
+#!/bin/bash -e
+
+[[ $(id -u) -eq 0 ]] || exec sudo -E "$0"
+
+apt_packages_list=(
+    emacs
+    emacs-mozc-bin
+    cmus
+    guake
+    arp-scan
+    dconf-cli
+    dconf-editor
+    tree
+    gnome-tweaks
+    mysql-client
+    python3-pip
+    xsel
+    pinta
+    fontforge
+    fonts-migmix
+    python-virtualenv
+    python3-venv
+    net-tools
+    vim
+    vagrant
+    virtualbox
+    fonts-noto-color-emoji
+    fish
+    graphviz
+    default-jre
+    ansible
+    imagemagick
+    htop
+    vlc
+    libreoffice
+)
+
+apt-get install -qq "${apt_packages_list[@]}"
