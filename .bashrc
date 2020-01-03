@@ -54,6 +54,8 @@ fi
 
 [[ -f /usr/share/sounds/GNUstep/Tink.wav ]] && notify() { paplay /usr/share/sounds/GNUstep/Tink.wav; }
 
+hash direnv 2> /dev/null && eval "$(direnv hook bash)"
+
 # color
 COLOREND="\[\e[00m\]"
 RED="\[\e[0;31m\]"
