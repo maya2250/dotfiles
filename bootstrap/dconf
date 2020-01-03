@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+test -z "${DISPLAY}" && exit 0
+
+cd "$(dirname "$0")"
+
+find dconf.d -type f | while read -r file; do
+    dir_path=$(echo "${file}" | sed -e "s/dconf.d//" -e "s/.conf/\//")
+    dconf load "${dir_path}" < "${file}"
+done
