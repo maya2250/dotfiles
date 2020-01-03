@@ -1,3 +1,0 @@
-https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
-https://zoom.us/client/latest/zoom_amd64.deb

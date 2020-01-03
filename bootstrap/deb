@@ -1,0 +1,19 @@
+#!/bin/bash -e
+
+[[ $(id -u) -eq 0 ]] || exec sudo -E "$0"
+
+deb_dir=$(mktemp -d)
+deb_packages_list=(
+    https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    "https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb"
+    https://zoom.us/client/latest/zoom_amd64.deb
+)
+
+pushd "${deb_dir}" > /dev/null
+for url in "${deb_packages_list[@]}"; do
+    curl -sSL -O "${url}"
+done
+popd > /dev/null
+
+apt-get install -qqf "${deb_dir}"/*.deb
+rm -fr "${deb_dir}"
