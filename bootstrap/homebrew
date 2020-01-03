@@ -1,12 +1,13 @@
-#!/usr/bin/env bash
+#!/bin/bash -eu
 
 set -e
 
 if hash brew 2> /dev/null; then
     :
-elif hash curl 2> /dev/null; then
+else
     case `uname --kernel-name` in
         Linux)
+            hash apt-get 2> /dev/null && sudo apt-get install -qq build-essential curl file git ruby
             yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
             test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
             test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
@@ -15,18 +16,24 @@ elif hash curl 2> /dev/null; then
             yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
             ;;
     esac
-else
-    echo -e "Couldn't install linuxbrew because not found curl" >&2
-    exit 1
 fi
 
-# move to directory existing this shell-script
-cd $(dirname $0)
+package_list=(
+    awscli
+    dep
+    git
+    go
+    n
+    pipenv
+    rbenv
+    tmux
+    shellcheck
+    prettier
+    tfenv
+    kubectl
+    direnv
+    gibo
+    cquery
+)
 
-# store packages to variable
-brew_list=$(cat "brewlist.txt")
-
-# install packages
-for package in ${brew_list[@]}; do
-    brew install ${package}
-done
+brew install --display-times "${package_list[@]}"
