@@ -1,0 +1,21 @@
+#!/bin/bash
+
+dotfiles_root_directory=$(git rev-parse --show-toplevel)
+
+dotfiles_list=(
+    .bashrc
+    .profile
+    .emacs.d/
+    .gitconfig
+    .gitignore_global
+    .docker/
+    .tmux.conf
+    .tmux.conf.linux
+    .tmux.conf.macos
+    .vim/
+    .xmodmaprc
+)
+
+for dotfile in "${dotfiles_list[@]}"; do
+    ln -sf "${dotfiles_root_directory}/${dotfile}" "${HOME}"
+done
