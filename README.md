@@ -3,28 +3,19 @@
 
 # dotfiles
 
-## Dotfiles install
+## Usage
 
-First, clone repository.
+### Ubuntu 19.10 (eoan)
 
-`git clone https://github.com/maya2250/dotfiles.git`
+Run all script within `bootstrap/` directory with the following commnad:
 
-Finally, execute `install.sh`.
-Then, create symbolic link from ./dotfiles/.* to ~/.
+``` bash
+wget -qO - https://raw.githubusercontent.com/maya2250/dotfiles/master/install | bash
+```
 
-`./dotfiles/install.sh`
+### Windows 10
 
-## (option) To install linuxbrew and brew packages
-
-Execute `install_brew`, and you can install linuxbrew and packages described `brewlist.txt`
-
-`./install_brew`
-
-## (option) ubuntu setup
-
-Install script for ubuntu 19.04 is placed to `./dotfils/ubuntu/`.
-
-Refer to `.circleci/config.yml` for usage.
+Run `.\win10\bootstrap.ps1` powershell script.
 
 ## Install manually for myself
 - github ssh key setup.
