@@ -36,6 +36,9 @@ package_list=(
     cquery
     yarn
     yarn-completion
+    minikube
 )
 
 brew install --display-times "${package_list[@]}"
+
+minikube completion bash | sudo tee /etc/bash_completion.d/minikube > /dev/null
