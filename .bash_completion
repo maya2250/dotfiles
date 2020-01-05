@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if hash brew 2> /dev/null; then
+   for i in "$(brew --prefix)/etc/bash_completion.d"/*; do
+       . "$i"
+   done
+fi
+
+hash aws_completer 2> /dev/null && complete -C aws_completer aws
+hash terraform 2> /dev/null && complete -C terraform terraform
+
+if [ -f /usr/share/bash-completion/completions/git ]; then
+    . /usr/share/bash-completion/completions/git
+    __git_complete g __git_main
+fi
