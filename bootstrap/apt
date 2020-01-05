@@ -1,7 +1,5 @@
 #!/bin/bash -e
 
-[[ $(id -u) -eq 0 ]] || exec sudo -E "$0"
-
 apt_packages_list=(
     emacs
     emacs-mozc-bin
@@ -35,4 +33,8 @@ apt_packages_list=(
     libreoffice
 )
 
-apt-get install -qq "${apt_packages_list[@]}"
+sudo apt-get install -qq "${apt_packages_list[@]}"
+
+mkdir -p ~/.config/autostart
+test -f /usr/share/applications/guake.desktop && \
+    ln -sf /usr/share/applications/guake.desktop ~/.config/autostart/guake.desktop
