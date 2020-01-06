@@ -45,6 +45,7 @@ package_list=(
     yarn
     yarn-completion
     minikube
+    cfssl
     aws-sam-cli
 )
 
