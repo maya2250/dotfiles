@@ -47,6 +47,7 @@ package_list=(
     minikube
     cfssl
     aws-sam-cli
+    circleci
 )
 
 brew install --display-times "${package_list[@]}"
