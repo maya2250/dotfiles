@@ -18,6 +18,14 @@ else
     esac
 fi
 
+tap_list=(
+    aws/tap
+)
+
+for tap in "${tap_list[@]}"; do
+    brew tap "${tap}"
+done
+
 package_list=(
     awscli
     dep
@@ -37,6 +45,7 @@ package_list=(
     yarn
     yarn-completion
     minikube
+    aws-sam-cli
 )
 
 brew install --display-times "${package_list[@]}"
