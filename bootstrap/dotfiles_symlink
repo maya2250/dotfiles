@@ -15,6 +15,7 @@ dotfiles_list=(
     .vim/
     .xmodmaprc
     .bash_completion
+    .terraformrc
 )
 
 for dotfile in "${dotfiles_list[@]}"; do
