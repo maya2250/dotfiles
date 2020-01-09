@@ -26,20 +26,6 @@ alias grep="grep --color"
 
 function path { echo $PATH | tr : '\n'; }
 
-# man
-export MANPAGER='less -R'
-man() {
-    env \
-	LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-	LESS_TERMCAP_md=$(printf "\e[1;31m") \
-	LESS_TERMCAP_me=$(printf "\e[0m") \
-	LESS_TERMCAP_se=$(printf "\e[0m") \
-	LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-	LESS_TERMCAP_ue=$(printf "\e[0m") \
-	LESS_TERMCAP_us=$(printf "\e[1;32m") \
-	man "$@"
-}
-
 # ref: https://github.com/scop/bash-completion#installation
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
@@ -47,6 +33,17 @@ man() {
 [[ -f /usr/share/sounds/GNUstep/Tink.wav ]] && notify() { paplay /usr/share/sounds/GNUstep/Tink.wav; }
 
 hash direnv 2> /dev/null && eval "$(direnv hook bash)"
+
+function man() {
+    env \
+	LESS_TERMCAP_md=$'\e[38;5;70m' \
+	LESS_TERMCAP_me=$'\e[0m' \
+	LESS_TERMCAP_so=$'\e[48;5;238m' \
+	LESS_TERMCAP_se=$'\e[0m' \
+	LESS_TERMCAP_us=$'\e[4;38;5;130m' \
+	LESS_TERMCAP_ue=$'\e[0m' \
+	man "$@"
+}
 
 # color
 COLOREND="\[\e[00m\]"
