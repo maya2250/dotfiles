@@ -45,14 +45,13 @@ function man() {
 	man "$@"
 }
 
-# color
 COLOREND="\[\e[00m\]"
 RED="\[\e[0;31m\]"
 GREEN="\[\e[0;32m\]"
 YELLOW="\[\e[0;33m\]"
 WHITE="\[\e[0;37m\]"
 
-function parse_git_branch() {
+function __my_parse_git_branch() {
     branch="$(git rev-parse --abbrev-ref HEAD 2> /dev/null)"
     test "${branch}" == "" && return 0
 
@@ -63,7 +62,7 @@ function parse_git_branch() {
     fi
 }
 
-function exit_status() {
+function __my_exit_status() {
     if [[ "$?" -eq 0 ]]; then
         echo "${WHITE}›${COLOREND}"
     else
@@ -72,8 +71,8 @@ function exit_status() {
 }
 
 function promps() {
-    tail="${WHITE}$(exit_status)${COLOREND}"
-    PS1="${YELLOW}\w${COLOREND}$(parse_git_branch) ${tail} "
+    tail="${WHITE}$(__my_exit_status)${COLOREND}"
+    PS1="${YELLOW}\w${COLOREND}$(__my_parse_git_branch) ${tail} "
 }
 
 export PROMPT_COMMAND="promps; $PROMPT_COMMAND"
