@@ -31,6 +31,9 @@ apt_packages_list=(
     htop
     vlc
     libreoffice
+    libvirt-clients
+    libvirt-daemon
+    qemu-kvm
 )
 
 sudo apt-get install -qq "${apt_packages_list[@]}"
