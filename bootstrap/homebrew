@@ -38,6 +38,7 @@ package_list=(
     shellcheck
     prettier
     tfenv
+    tflint
     kubectl
     direnv
     gibo
