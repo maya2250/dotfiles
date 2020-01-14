@@ -331,3 +331,5 @@
 
 (use-package prettier-js
   :hook ((js2-mode css-mode scss-mode) . prettier-js-mode))
+
+(use-package rfc-mode)
