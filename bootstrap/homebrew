@@ -49,6 +49,7 @@ package_list=(
     cfssl
     aws-sam-cli
     circleci
+    terraformer
 )
 
 brew install --display-times "${package_list[@]}"
