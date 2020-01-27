@@ -14,3 +14,4 @@ vcredist2012
 yarn
 nodejs-lts
 handle
+awscli
