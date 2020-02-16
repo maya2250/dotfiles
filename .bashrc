@@ -36,13 +36,13 @@ hash direnv 2> /dev/null && eval "$(direnv hook bash)"
 
 function man() {
     env \
-	LESS_TERMCAP_md=$'\e[38;5;70m' \
-	LESS_TERMCAP_me=$'\e[0m' \
-	LESS_TERMCAP_so=$'\e[48;5;238m' \
-	LESS_TERMCAP_se=$'\e[0m' \
-	LESS_TERMCAP_us=$'\e[4;38;5;130m' \
-	LESS_TERMCAP_ue=$'\e[0m' \
-	man "$@"
+        LESS_TERMCAP_md=$'\e[38;5;70m' \
+        LESS_TERMCAP_me=$'\e[0m' \
+        LESS_TERMCAP_so=$'\e[48;5;238m' \
+        LESS_TERMCAP_se=$'\e[0m' \
+        LESS_TERMCAP_us=$'\e[4;38;5;130m' \
+        LESS_TERMCAP_ue=$'\e[0m' \
+        man "$@"
 }
 
 COLOREND="\[\e[00m\]"
