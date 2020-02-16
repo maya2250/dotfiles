@@ -4,8 +4,7 @@ set incsearch
 set autoread
 set showmatch
 set smartindent
-set shiftwidth=2
-set tabstop=4
+set shiftwidth=2 tabstop=2 expandtab
 
 scriptencoding utf-8
 set encoding=utf-8
