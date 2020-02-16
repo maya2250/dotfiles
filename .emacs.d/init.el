@@ -106,6 +106,7 @@
   :custom
   (lsp-auto-guess-root t)
   (lsp-restart 'ignore)
+  (lsp-auto-configure nil)
   :config
   (add-hook 'prog-mode-hook #'lsp))
 
