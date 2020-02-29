@@ -50,6 +50,7 @@ package_list=(
     aws-sam-cli
     circleci
     terraformer
+    hub
 )
 
 brew install --display-times "${package_list[@]}"
