@@ -24,7 +24,7 @@ alias g="git"
 alias globalip="curl inet-ip.info"
 alias grep="grep --color"
 alias k="kubectl"
-complete -F __start_kubectl k
+hash kubectl 2> /dev/null && complete -F __start_kubectl k
 
 function path { echo $PATH | tr : '\n'; }
 
