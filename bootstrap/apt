@@ -34,6 +34,7 @@ apt_packages_list=(
     libvirt-clients
     libvirt-daemon
     qemu-kvm
+    nmap
 )
 
 sudo apt-get install -qq "${apt_packages_list[@]}"
