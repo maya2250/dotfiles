@@ -3,6 +3,7 @@ commands:
   build:
     steps:
       - checkout
+      - run: sudo apt-get update -yq
       - run: bootstrap/deb
       - run: bootstrap/misc
       - run: bootstrap/dconf
@@ -11,11 +12,31 @@ commands:
       - run: bootstrap/docker
       - run: bootstrap/homebrew
 
-jobs:
-  build:
+executors:
+  ubuntu-eoan:
     docker:
       - image: maya2250/dotfiles:ubuntu-19.10
+  ubuntu-focal:
+    docker:
+      - image: maya2250/dotfiles:ubuntu-20.04
+
+jobs:
+  build:
+    parameters:
+      executor:
+        type: executor
+    executor: << parameters.executor >>
     working_directory: ~/.dotfiles
     steps:
-      - run: sudo apt-get update -yq
       - build
+
+workflows:
+  version: 2
+  matrix-build:
+    jobs:
+      - build:
+          name: ubuntu-eoan
+          executor: ubuntu-eoan
+      - build:
+          name: ubuntu-focal
+          executor: ubuntu-focal
