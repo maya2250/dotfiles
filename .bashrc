@@ -4,35 +4,12 @@ if [[ -z "$TMUX" ]] && hash tmux 2> /dev/null; then
     tmux attach || exec tmux
 fi
 
-# alias
-case `uname --kernel-name` in
-    Linux)
-        alias ls='ls --color -F'
-        alias ll='ls --color -alF'
-        alias la='ls --color -A'
-        alias pbcopy="xsel --clipboard --input"
-        ;;
-    Darwin)
-        alias ls='ls -FG'
-        alias la='ls -aFG'
-        alias ll='ls -alFG'
-        ;;
-esac
-
-alias be="bundle exec"
-alias g="git"
-alias globalip="curl inet-ip.info"
-alias grep="grep --color"
-alias k="kubectl"
-hash kubectl 2> /dev/null && complete -F __start_kubectl k
-
-function path { echo $PATH | tr : '\n'; }
-
 # ref: https://github.com/scop/bash-completion#installation
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
 
-[[ -f /usr/share/sounds/GNUstep/Tink.wav ]] && notify() { paplay /usr/share/sounds/GNUstep/Tink.wav; }
+# shellcheck source=/dev/null
+[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
 
 hash direnv 2> /dev/null && eval "$(direnv hook bash)"
 
