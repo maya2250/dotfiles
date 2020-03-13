@@ -31,7 +31,7 @@
 (setq show-paren-style 'expression)
 (setq show-paren-delay 0)
 (set-face-attribute 'show-paren-match nil
-		    :background nil :underline "gray50")
+                    :background nil :underline "gray50")
 
 (set-face-attribute 'fringe nil :background "#2e3436") ;; right fringe background color
 
