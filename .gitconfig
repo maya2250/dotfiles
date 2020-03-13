@@ -8,8 +8,8 @@
 	ui = true
 [alias]
 	alias = config --get-regexp \"alias.*\"
-	# graph
 	g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %<(70,trunc)%s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        l = log
 	lp = log -p
 	ls = log --stat
 	s = status
@@ -36,4 +36,6 @@
 	p = push
 	pc = !git push -u origin `git rev-parse --abbrev-ref HEAD`
 	pcf = !git push -fu origin `git rev-parse --abbrev-ref HEAD`
-
+        first = !git ch $(git rev-list --max-parents=0 master)
+        prev = checkout HEAD^1
+        next = !git log --reverse --pretty=%H master | grep -A1 $(git rev-parse HEAD) | tail -1 | xargs git checkout
