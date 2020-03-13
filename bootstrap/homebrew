@@ -1,16 +1,12 @@
 #!/bin/bash -eu
 
-set -e
-
-if hash brew 2> /dev/null; then
-    :
-else
-    case `uname --kernel-name` in
+if ! hash brew 2> /dev/null; then
+    case $(uname --kernel-name) in
         Linux)
             hash apt-get 2> /dev/null && sudo apt-get install -qq build-essential curl file git ruby
             yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-            test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
-            test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+            test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+            test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
             ;;
         Darwin)
             yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -54,6 +50,4 @@ package_list=(
     hub
 )
 
-brew install --display-times "${package_list[@]}"
-
-minikube completion bash | sudo tee /etc/bash_completion.d/minikube > /dev/null
+brew install --force --display-times "${package_list[@]}"
