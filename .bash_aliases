@@ -16,6 +16,7 @@ alias be="bundle exec"
 alias g="git"
 alias globalip="curl inet-ip.info"
 alias grep="grep --color"
+alias nocomgrep='grep "^[^#;]" --color=never'
 alias syc="systemctl"
 alias em="emacs"
 alias dirusg="sudo du -h --max-depth=1 | sort -hrk1 | head -20"
