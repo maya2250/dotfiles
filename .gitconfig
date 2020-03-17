@@ -12,6 +12,7 @@ ui = true
 [alias]
 alias = config --get-regexp \"alias.*\"
 g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %<(70,trunc)%s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+gt = log --tags --graph --pretty=format:'%Cred%h%Creset %Cgreen%ai %C(yellow)%<(30,trunc)%D%Creset %<(70,trunc)%s' --simplify-by-decoration
 l = log
 lp = log -p
 ls = log --stat
