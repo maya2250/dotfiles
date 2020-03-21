@@ -48,6 +48,7 @@ package_list=(
     circleci
     terraformer
     hub
+    hadolint
 )
 
 brew install --force --display-times "${package_list[@]}"
