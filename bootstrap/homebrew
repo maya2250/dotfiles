@@ -49,6 +49,7 @@ package_list=(
     terraformer
     hub
     hadolint
+    nektos/tap/act
 )
 
 brew install --force --display-times "${package_list[@]}"
