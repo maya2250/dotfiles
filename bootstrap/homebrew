@@ -51,6 +51,8 @@ package_list=(
     hadolint
     nektos/tap/act
     cmake
+    bison
+    flex
 )
 
 brew install --force --display-times "${package_list[@]}"
