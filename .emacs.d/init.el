@@ -278,6 +278,8 @@
   :hook
   (terraform-mode . terraform-format-on-save-mode))
 
+(use-package cmake-mode)
+
 (use-package editorconfig
   :config
   (editorconfig-mode 1)
