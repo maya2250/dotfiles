@@ -50,6 +50,7 @@ package_list=(
     hub
     hadolint
     nektos/tap/act
+    cmake
 )
 
 brew install --force --display-times "${package_list[@]}"
