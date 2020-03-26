@@ -35,6 +35,7 @@ apt_packages_list=(
     libvirt-daemon
     qemu-kvm
     nmap
+    jq
 )
 
 sudo apt-get install -qq "${apt_packages_list[@]}"
