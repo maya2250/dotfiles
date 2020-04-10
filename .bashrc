@@ -1,7 +1,7 @@
 # If not running interactively, do not do anything
 [[ $- != *i* ]] && return
 if [[ -z "$TMUX" ]] && hash tmux 2> /dev/null; then
-    tmux attach || exec tmux
+    tmux attach -d || exec tmux
 fi
 
 # ref: https://github.com/scop/bash-completion#installation
