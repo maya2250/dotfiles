@@ -11,22 +11,15 @@ apt_packages_list=(
     tree
     gnome-tweaks
     mysql-client
-    python3-pip
     xsel
     pinta
-    fontforge
-    fonts-migmix
-    python-virtualenv
-    python3-venv
     net-tools
     vim
     vagrant
     virtualbox
     fonts-noto-color-emoji
-    fish
     graphviz
     default-jre
-    ansible
     imagemagick
     htop
     vlc

@@ -53,6 +53,8 @@ package_list=(
     cmake
     bison
     flex
+    ansible
+    ansible-lint
 )
 
 brew install --force --display-times "${package_list[@]}"
