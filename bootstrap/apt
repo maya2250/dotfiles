@@ -29,6 +29,8 @@ apt_packages_list=(
     qemu-kvm
     nmap
     jq
+    ibus-mozc
+    mozc-utils-gui
 )
 
 sudo apt-get install -qq "${apt_packages_list[@]}"
