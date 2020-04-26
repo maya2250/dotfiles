@@ -5,7 +5,7 @@
 
 ## Usage
 
-### Ubuntu 19.10 (eoan)
+### Ubuntu 20.04 (focal)
 
 Run all script within `bootstrap/` directory with the following commnad:
 
@@ -16,8 +16,3 @@ wget -qO - https://raw.githubusercontent.com/maya2250/dotfiles/master/install | 
 ### Windows 10
 
 Run `.\win10\bootstrap.ps1` powershell script.
-
-## Install manually for myself
-- github ssh key setup.
-  1. https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-  1. https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
