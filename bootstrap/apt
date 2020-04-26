@@ -31,6 +31,7 @@ apt_packages_list=(
     jq
     ibus-mozc
     mozc-utils-gui
+    piper
 )
 
 sudo apt-get install -qq "${apt_packages_list[@]}"
