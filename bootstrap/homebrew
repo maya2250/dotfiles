@@ -55,6 +55,7 @@ package_list=(
     flex
     ansible
     ansible-lint
+    docker-compose
 )
 
 brew install --force --display-times "${package_list[@]}"
