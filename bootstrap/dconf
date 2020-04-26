@@ -1,6 +1,6 @@
-#!/bin/bash -e
+#!/bin/bash -eux
 
-test -z "${DISPLAY}" && exit 0
+test "${DISPLAY:-null}" = "null" && exit 0
 
 cd "$(dirname "$0")"
 

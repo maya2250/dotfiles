@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -eux
 
 [[ $(id -u) -eq 0 ]] || exec sudo -E "$0"
 
