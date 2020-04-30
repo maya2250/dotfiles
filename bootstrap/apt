@@ -34,6 +34,7 @@ apt_packages_list=(
     ibus-mozc
     mozc-utils-gui
     piper
+    speedtest-cli
 )
 
 sudo apt-get install -qq "${apt_packages_list[@]}"
