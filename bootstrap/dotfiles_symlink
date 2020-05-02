@@ -13,7 +13,6 @@ dotfiles_list=(
     .tmux.conf.linux
     .tmux.conf.macos
     .vim/
-    .xmodmaprc
     .bash_completion
     .bash_aliases
 )
