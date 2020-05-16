@@ -28,3 +28,16 @@ fi
 
 path() { echo $PATH | tr : '\n'; }
 [[ -f /usr/share/sounds/GNUstep/Tink.wav ]] && notify() { paplay /usr/share/sounds/GNUstep/Tink.wav; }
+
+tfinit() {
+    hash tflint > /dev/null && tflint
+    terraform init
+    terraform validate
+    terraform apply
+}
+
+check_aws_credential() {
+    aws sts get-caller-identity
+    echo AWS_REGION: "${AWS_REGION:-none}"
+    echo AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION:-none}"
+}
