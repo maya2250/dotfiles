@@ -4,5 +4,25 @@
   "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
   "editor.formatOnSave": true,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "editor.wordWrap": "on",
+  "terminal.integrated.shellArgs.linux": ["--noprofile", "--norc"],
+  "breadcrumbs.enabled": true,
+  "workbench.activityBar.visible": false,
+  "editor.minimap.enabled": false,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ff9200",
+    "editor.lineHighlightBackground": "#000000",
+    "tab.activeBorder": "#ff0000",
+    "tab.unfocusedActiveBorder": "#000000"
+  },
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.startupEditor": "none"
 }
