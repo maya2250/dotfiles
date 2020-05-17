@@ -57,6 +57,7 @@ package_list=(
     ansible-lint
     docker-compose
     packer
+    git-secrets
 )
 
 brew install --force --display-times "${package_list[@]}"
