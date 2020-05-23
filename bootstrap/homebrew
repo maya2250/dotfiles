@@ -58,6 +58,7 @@ package_list=(
     docker-compose
     packer
     git-secrets
+    awsebcli
 )
 
 brew install --force --display-times "${package_list[@]}"
