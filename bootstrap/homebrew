@@ -59,6 +59,7 @@ package_list=(
     packer
     git-secrets
     awsebcli
+    gh
 )
 
 brew install --force --display-times "${package_list[@]}"
