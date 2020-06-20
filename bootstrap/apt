@@ -36,6 +36,9 @@ apt_packages_list=(
     piper
     speedtest-cli
     pwgen
+    glances
+    stress
+    stress-ng
 )
 
 sudo apt-get install -qq "${apt_packages_list[@]}"
