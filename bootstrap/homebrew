@@ -60,6 +60,7 @@ package_list=(
     git-secrets
     awsebcli
     gh
+    amazon-ecs-cli
 )
 
 brew install --force --display-times "${package_list[@]}"
