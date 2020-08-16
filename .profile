@@ -24,4 +24,8 @@ if hash go 2> /dev/null; then
     unset gopath
 fi
 
+if [ -d "$HOME/.cargo/bin" ]; then
+    export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
 export LC_TIME=C
