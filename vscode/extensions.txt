@@ -11,6 +11,7 @@ HookyQR.beautify
 ionutvmi.reg
 lfs.vscode-emacs-friendly
 ms-azuretools.vscode-docker
+ms-python.python
 ms-vscode-remote.remote-wsl
 ms-vscode.powershell
 msjsdiag.debugger-for-chrome
