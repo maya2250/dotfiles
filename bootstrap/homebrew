@@ -63,6 +63,7 @@ package_list=(
     amazon-ecs-cli
     aws/tap/copilot-cli
     fluxctl
+    dive
 )
 
 brew install --force --display-times "${package_list[@]}"
