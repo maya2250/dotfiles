@@ -1,5 +1,15 @@
 #!/bin/bash -eux
 
+apt_repositories_list=(
+    ppa:mkusb/ppa
+)
+
+for repo in "${apt_repositories_list[@]}"; do
+    sudo add-apt-repository -y "${repo}"
+done
+
+sudo apt-get update -q
+
 apt_packages_list=(
     emacs
     emacs-mozc-bin
@@ -30,6 +40,7 @@ apt_packages_list=(
     ngrep
     fcitx
     fcitx-mozc
+    mkusb
 )
 
 sudo apt-get install -qq "${apt_packages_list[@]}"
