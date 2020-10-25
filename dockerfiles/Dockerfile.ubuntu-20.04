@@ -3,7 +3,7 @@ LABEL maintainer="maya2250.dev@gmail.com"
 
 ARG USER="guest"
 ARG LINUXBREW_DEPENDENCIES="build-essential curl file git ruby"
-ARG BUILD_DEPENDENCIES="language-pack-en sudo"
+ARG BUILD_DEPENDENCIES="language-pack-en sudo software-properties-common"
 
 ENV DEBIAN_FRONTEND noninteractive
 
