@@ -54,12 +54,10 @@ function promps() {
     PS1="${YELLOW}\w${COLOREND}$(__my_parse_git_branch) ${tail} "
 }
 
-export PROMPT_COMMAND="promps; ${PROMPT_COMMAND}"
-
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth
 export HISTTIMEFORMAT='%c '
 shopt -s histappend
 
-export PROMPT_COMMAND="history -a; history -c; history -r; ${PROMPT_COMMAND}"
+export PROMPT_COMMAND="history -a; history -c; history -r; promps; ${PROMPT_COMMAND}"
