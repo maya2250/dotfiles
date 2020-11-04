@@ -86,6 +86,10 @@
 ;; fix slow next-line ref: https://emacs.stackexchange.com/questions/28736/emacs-pointcursor-movement-lag
 (setq auto-window-vscroll nil)
 
+(when (eq system-type 'darwin)
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier 'alt))
+
 ;; packages
 (eval-when-compile
   (require 'use-package))
