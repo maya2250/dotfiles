@@ -49,7 +49,7 @@ function __my_exit_status() {
     fi
 }
 
-function promps() {
+function __my_promps() {
     tail="${WHITE}$(__my_exit_status)${COLOREND}"
     PS1="${YELLOW}\w${COLOREND}$(__my_parse_git_branch) ${tail} "
 }
@@ -60,4 +60,4 @@ export HISTCONTROL=ignoreboth
 export HISTTIMEFORMAT='%c '
 shopt -s histappend
 
-export PROMPT_COMMAND="history -a; history -c; history -r; promps; ${PROMPT_COMMAND}"
+export PROMPT_COMMAND="history -a; history -c; history -r; __my_promps; ${PROMPT_COMMAND}"
