@@ -1,4 +1,4 @@
-case `uname --kernel-name` in
+case `uname` in
     Linux)
         alias ls='ls --color -F'
         alias ll='ls --color -alF'
