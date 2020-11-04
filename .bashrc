@@ -54,10 +54,21 @@ function __my_promps() {
     PS1="${YELLOW}\w${COLOREND}$(__my_parse_git_branch) ${tail} "
 }
 
+__prompt_common_prefix="history -a; history -c; history -r"
+
+function activate-my-prompt() {
+    export PROMPT_COMMAND="${__prompt_common_prefix}; __my_promps; ${PROMPT_COMMAND}"
+}
+
+function deactivate-my-prompt() {
+    export PROMPT_COMMAND="${__prompt_common_prefix}"
+    export PS1="$ "
+}
+
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth
 export HISTTIMEFORMAT='%c '
 shopt -s histappend
 
-export PROMPT_COMMAND="history -a; history -c; history -r; __my_promps; ${PROMPT_COMMAND}"
+activate-my-prompt
