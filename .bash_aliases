@@ -41,3 +41,12 @@ check_aws_credential() {
     echo AWS_REGION: "${AWS_REGION:-none}"
     echo AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION:-none}"
 }
+
+chr() {
+    # shellcheck disable=SC2059
+    printf \\"$(printf '%03o' "$1")"
+}
+
+ord() {
+    printf '%d' "'$1"
+}
