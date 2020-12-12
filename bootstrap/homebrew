@@ -1,5 +1,7 @@
 #!/bin/bash -eux
 
+cd "$(dirname "$0")"
+
 if ! hash brew 2> /dev/null; then
     case $(uname --kernel-name) in
         Linux)
@@ -14,56 +16,4 @@ if ! hash brew 2> /dev/null; then
     esac
 fi
 
-tap_list=(
-    aws/tap
-)
-
-for tap in "${tap_list[@]}"; do
-    brew tap "${tap}"
-done
-
-package_list=(
-    awscli
-    dep
-    git
-    go
-    n
-    pipenv
-    rbenv
-    tmux
-    shellcheck
-    prettier
-    tfenv
-    tflint
-    kubectl
-    helm
-    direnv
-    gibo
-    cquery
-    yarn
-    yarn-completion
-    minikube
-    cfssl
-    aws-sam-cli
-    circleci
-    terraformer
-    hub
-    hadolint
-    nektos/tap/act
-    cmake
-    bison
-    flex
-    ansible
-    ansible-lint
-    docker-compose
-    packer
-    git-secrets
-    awsebcli
-    gh
-    amazon-ecs-cli
-    aws/tap/copilot-cli
-    fluxctl
-    dive
-)
-
-brew install --force --display-times "${package_list[@]}"
+brew bundle install --file=../Brewfile
