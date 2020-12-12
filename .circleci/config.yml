@@ -10,7 +10,9 @@ commands:
       - run: bootstrap/dotfiles_symlink
       - run: bootstrap/apt
       - run: bootstrap/docker
-      - run: bootstrap/homebrew
+      - run:
+          command: bootstrap/homebrew
+          no_output_timeout: 30m
 
 executors:
   ubuntu-focal:
